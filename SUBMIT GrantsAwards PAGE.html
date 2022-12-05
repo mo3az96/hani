@@ -1,0 +1,1316 @@
+<div class="card">
+  <div class="card-header mb-2 text-center">
+    <h4 class="card-title mb-0">SUBMIT Grants/Awards PAGE</h4>
+  </div>
+  <div class="card-body">
+    <div class="px-3">
+      <div class="col-md-12">
+        <h4 class="card-title mb-0">Guidlines</h4>
+        <p>
+          Should be a guideline text message at the top of the page that admin
+          added in the settings page which shows the application procedure and
+          application file templates. User here will download the template the
+          admin added (merged file for all pdfs admin uploaded) for this
+          application and then upload ... this form will allow one file
+          downloading and uploading Deadlines for opining and closing will be in
+          the Guidlines
+        </p>
+        <h4 class="card-title mb-0">
+          Download template and fill it up and upload.
+        </h4>
+        <p>
+          (upload restricted to 100MB and only pdf allowed) Click To Upload
+          Application templateGuidlines
+          <br />
+          Multiple Attachments button here just like in add equipments but with
+          file and description.
+        </p>
+      </div>
+    </div>
+    <div class="px-3">
+      <form
+        class="form"
+        action=""
+        method="post"
+        enctype=""
+        onsubmit=""
+        style="padding: 10px"
+      >
+        <input type="hidden" name="announce_id" value="30" />
+        <input type="hidden" name="submission_id" value="2022-28198" />
+        <div class="row mt-3">
+          <div class="col-lg-1 col-md-1">
+            <button
+              type="button"
+              name="button"
+              class="btn btn-outline-primary btn-sm mt-1 add_more_files"
+            >
+              Click To Add Attachments
+            </button>
+          </div>
+          <div class="col-xl-12 col-lg-12 add_more_files_fields">
+            <div class="row">
+              <div class="col-xl-5 col-lg-5 mb-2">
+                <fieldset class="form-group">
+                  <label for="basicInput">File Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    required=""
+                    name="file_label[]"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-5 col-lg-5 mb-2">
+                <label for="file">Upload File</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01"
+                      >Upload</span
+                    >
+                  </div>
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      required=""
+                      aria-describedby="inputGroupFileAddon01"
+                      name="attachments[]"
+                    />
+                    required
+                    <label class="custom-file-label" for="inputGroupFile01"
+                      >Choose File</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-1 text-danger"></div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-1">
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <h6>Funding Type:</h6>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="fund_type"
+                  value="1"
+                  class="custom-control-input"
+                  id="fund_type1"
+                />
+                <label class="custom-control-label" for="fund_type1"
+                  >Grant
+                </label>
+              </div>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="fund_type"
+                  value="2"
+                  class="custom-control-input"
+                  id="fund_type2"
+                />
+                <label class="custom-control-label" for="fund_type2"
+                  >Award
+                </label>
+              </div>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="fund_type"
+                  value="3"
+                  class="custom-control-input"
+                  id="fund_type3"
+                />
+                <label class="custom-control-label" for="fund_type3"
+                  >Other
+                </label>
+                <input
+                  type="text"
+                  name="other_fund_type"
+                  required=""
+                  class="form-control col-xl-6"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-1">
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <h6>Application Type</h6>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="app_type"
+                  value="1"
+                  class="custom-control-input"
+                  id="very_familiar_txt1"
+                />
+                <label class="custom-control-label" for="very_familiar_txt1"
+                  >New
+                </label>
+              </div>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="app_type"
+                  value="2"
+                  class="custom-control-input"
+                  id="app_type2"
+                />
+                <label class="custom-control-label" for="app_type2"
+                  >other
+                </label>
+                <input
+                  type="text"
+                  name="other_app_type"
+                  required=""
+                  class="form-control col-xl-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Funding Organization:</label>
+              <input
+                type="text"
+                name="fund_org"
+                placeholder="Funding Organization:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Administration Information:</label>
+              <input
+                type="text"
+                name="admin_info"
+                placeholder="Administration Information:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Funding Program:</label>
+              <input
+                type="text"
+                name="fund_prog"
+                placeholder="Funding Program:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Program Type/ Code:</label>
+              <input
+                type="text"
+                name="prog_type"
+                placeholder="Program Type/ Code:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Funding Opportunity Title:</label>
+              <input
+                type="text"
+                name="fund_title"
+                placeholder="Funding Opportunity Title:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Pre-registration:</label>
+              <input
+                type="date"
+                name="pre_reg"
+                placeholder="Pre-registration:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Open Submission:</label>
+              <input
+                type="date"
+                name="open_sub"
+                placeholder="Open Submission:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Application Submission Deadline:</label>
+              <input
+                type="date"
+                name="submission_deadline"
+                placeholder="Application Submission Deadline:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Registration Deadline:</label>
+              <input
+                type="date"
+                name="reg_deadline"
+                placeholder="Registration Deadline:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Communication With Applicants:</label>
+              <input
+                type="date"
+                name="communication_with_app"
+                placeholder="Communication With Applicants:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Winner Announcement:</label>
+              <input
+                type="date"
+                name="winner_announcement"
+                placeholder="Winner Announcement:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Earliest Project Start:</label>
+              <input
+                type="date"
+                name="earliest_project_start"
+                placeholder="Earliest Project Start:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Budget:</label>
+              <input
+                type="text"
+                name="budget"
+                placeholder="Budget:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Project Period:</label>
+              <input
+                type="text"
+                name="project_period"
+                placeholder="Project Period:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Expected Number of Awards:</label>
+              <input
+                type="text"
+                name="expected_number_of_awards:"
+                placeholder="Expected Number of Awards:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Cost Sharing Requirement:</label>
+              <input
+                type="text"
+                name="cost_sharing_requirement"
+                placeholder="Cost Sharing Requirement:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Eligibility"</label>
+              <input type="text" name="eligibility" placeholder="Eligibility""
+              class="form-control" />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Eligible Applicants:</label>
+              <input
+                type="text"
+                name="eligible_app"
+                placeholder="Eligible Applicants:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <textarea
+                name="textarea"
+                required=""
+                placeholder=""
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                ><h3 class="card-title">Additional information</h3></label
+              >
+              <textarea
+                name="additional_information"
+                required=""
+                placeholder="Additional information"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"><h3 class="card-title">Scope:</h3></label>
+              <textarea
+                name="scope"
+                required=""
+                placeholder="Scope:"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                ><h3 class="card-title">Description:</h3></label
+              >
+              <textarea
+                name="description"
+                required=""
+                placeholder="Description:"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                ><h3 class="card-title">Funding Activity (Area):</h3></label
+              >
+              <textarea
+                name="funding_activity"
+                required=""
+                placeholder="Funding Activity (Area):"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                ><h3 class="card-title">Objectives:</h3></label
+              >
+              <textarea
+                name="abjectives"
+                required=""
+                placeholder="Objectives:"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                ><h3 class="card-title">
+                  Mapping to the Organization Strategic goals:
+                </h3></label
+              >
+              <textarea
+                name="mapping_to_the_organization_strategic_goals"
+                required=""
+                placeholder="Mapping to the Organization Strategic goals:"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                ><h3 class="card-title">Indicator of Success</h3></label
+              >
+              <textarea
+                name="indicator_of_success"
+                required=""
+                placeholder="Indicator of Success"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                ><h3 class="card-title">Other Information:</h3></label
+              >
+              <textarea
+                name="other_information:"
+                required=""
+                placeholder="Other Information:"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Grantor Contact Information:</label>
+              <input
+                type="text"
+                name="grantor_contact_information:"
+                placeholder="Grantor Contact Information:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-1 col-md-1">
+            <button
+              type="button"
+              name="download_app_template"
+              class="btn btn-outline-primary btn-sm mt-1 download_app_template"
+            >
+              Download Application Template
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-0">Applicant details</h4>
+          </div>
+
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">First Name: (English)</label>
+              <input
+                type="text"
+                name="first_name_en"
+                value="admin"
+                readonly
+                placeholder="First Name: (English)"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Middle Name: (English)</label>
+              <input
+                type="text"
+                name="middle_name_en"
+                value="admin"
+                readonly
+                placeholder="Middle Name: (English)"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Last Name: (English) *</label>
+              <input
+                type="text"
+                name="last_name_en"
+                value="admin"
+                readonly
+                placeholder="Last Name: (English)"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">First Name: (Arabic)</label>
+              <input
+                type="text"
+                name="first_name_ar"
+                value="admin"
+                readonly
+                placeholder="First Name: (Arabic)"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Middle Name: (Arabic)</label>
+              <input
+                type="text"
+                name="middle_name_ar"
+                value="admin"
+                readonly
+                placeholder="Middle Name: (Arabic)"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Last Name: (Arabic) *</label>
+              <input
+                type="text"
+                name="last_name_ar"
+                value="admin"
+                readonly
+                placeholder="Last Name: (Arabic)"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Position/Title : </label>
+              <input
+                type="text"
+                name="position"
+                value="admin"
+                readonly
+                placeholder="Position/Title : "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Organization: </label>
+              <input
+                type="text"
+                name="organization"
+                value="admin"
+                readonly
+                placeholder="Organization: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">College/Division: </label>
+              <input
+                type="text"
+                name="college"
+                value="admin"
+                readonly
+                placeholder="College/Division:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Department: </label>
+              <input
+                type="text"
+                name="department"
+                value="admin"
+                readonly
+                placeholder="Department:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Status: </label>
+              <input
+                type="text"
+                name="status"
+                value="admin"
+                readonly
+                placeholder="Status:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">ID number:</label>
+              <input
+                type="text"
+                name="ID_number"
+                value="admin"
+                readonly
+                placeholder="ID number:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Univ/Institutional E-mail:</label>
+              <input
+                type="text"
+                name="institutional_mail"
+                value="admin"
+                readonly
+                placeholder="Univ/Institutional E-mail:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Address street : </label>
+              <input
+                type="text"
+                name="address_street"
+                value="admin"
+                readonly
+                placeholder="Address street"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Address City</label>
+              <input
+                type="text"
+                name="address_city"
+                value="admin"
+                readonly
+                placeholder="Address City"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Address country</label>
+              <input
+                type="text"
+                name="address_country"
+                value="admin"
+                readonly
+                placeholder="Address country"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Zip</label>
+              <input
+                type="text"
+                name="zip"
+                value="admin"
+                readonly
+                placeholder="Zip"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Phone office</label>
+              <input
+                type="tel"
+                name="phone_office"
+                value="admin"
+                readonly
+                placeholder="Phone office"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Fax: </label>
+              <input
+                type="tel"
+                name="fax"
+                value="admin"
+                readonly
+                placeholder="Fax: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Emergency no. for after hours: </label>
+              <input
+                type="tel"
+                name="emergency_phone"
+                value="admin"
+                readonly
+                placeholder="Emergency no. for after hours: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Phone: </label>
+              <input
+                type="tel"
+                name="phone"
+                value="admin"
+                readonly
+                placeholder="Phone: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-0">Proposal details</h4>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Application Title English: </label>
+              <input
+                type="text"
+                name="app_title_en"
+                placeholder="Application Title English: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Proposal Title Arabic: </label>
+              <input
+                type="text"
+                name="proposal_title_ar "
+                placeholder="Proposal Title Arabic: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Application Abstract English: * </label>
+              <textarea
+                name="app_abstract_en"
+                required=""
+                placeholder="Application Abstract English:"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Application Abstract Arabic: * </label>
+              <textarea
+                name="app_abstract_ar"
+                required=""
+                placeholder="Application Abstract Arabic"
+                class="form-control"
+                rows="8"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-6 mb-1">
+            <fieldset class="form-group">
+              <label for="app_keywords">Application Keywords:</label><br />
+              <select
+                class="custom-selct"
+                name="app_keywords[]"
+                multiple
+                style="width: 100%"
+                data-placeholder="Application Keywords:"
+                required=""
+                id="app_keywords"
+              >
+                <option value="1">A tag</option>
+                <option value="8">Tags</option>
+                <option value="9">Tag two</option>
+                <option value="10">Bags</option>
+                <option value="12">safas</option>
+                <option value="13">safa</option>
+                <option value="57">asa</option>
+                <option value="65">aaaaaaa</option>
+                <option value="66">sahfjk</option>
+                <option value="67">student</option>
+                <option value="68">student1</option>
+                <option value="71">A</option>
+                <option value="72">faculty</option>
+                <option value="73">labmanager</option>
+                <option value="74">postdoctoral</option>
+                <option value="75">himbha9</option>
+                <option value="76">researcher</option>
+                <option value="77">technician</option>
+                <option value="78">musaad</option>
+                <option value="90">jojo</option>
+                <option value="91">dsadsa</option>
+                <option value="97">UserLab5</option>
+                <option value="98">user65657</option>
+                <option value="99">UserLab6</option>
+                <option value="100">MAAA</option>
+                <option value="101">sds</option>
+                <option value="102">mam</option>
+                <option value="103">mamm</option>
+                <option value="104">dsd</option>
+                <option value="106">SSS</option>
+                <option value="107">aaa</option>
+                <option value="108">hani</option>
+                <option value="115">asibai@nbsventure.com</option>
+                <option value="116">MAA</option>
+                <option value="117">MAA2</option>
+                <option value="118">M.Husamaddin</option>
+              </select>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Estimated project funding :</label>
+              <input
+                type="number"
+                name="estimated_project_funding "
+                placeholder="Estimated project funding :"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Estimated project Time From :</label>
+              <input
+                type="date"
+                name="estimated_project_time_from "
+                placeholder="Estimated project Time From :"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Estimated project Time To:</label>
+              <input
+                type="date"
+                name="estimated_project_time_to"
+                placeholder="Estimated project Time To:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-3">Principle Investigators Names</h4>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Name:</label>
+              <input
+                type="text"
+                name="principle_investigators_name"
+                placeholder="Name:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Univ/ Institution: </label>
+              <input
+                type="text"
+                name="principle_investigators_univ"
+                placeholder="Univ/ Institution: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">College:</label>
+              <input
+                type="text"
+                name="principle_investigators_college"
+                placeholder="College:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Department: </label>
+              <input
+                type="text"
+                name="principle_investigators_department"
+                placeholder="Department: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Employee ID#: </label>
+              <input
+                type="text"
+                name="principle_investigators_employee_ID"
+                placeholder="Employee ID#: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Email:</label>
+              <input
+                type="email"
+                name="principle_investigators_mail"
+                placeholder="Email:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-3">Co Principle Investigators Names</h4>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Name:</label>
+              <input
+                type="text"
+                name="co_principle_investigators_name"
+                placeholder="Name:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Univ/ Institution: </label>
+              <input
+                type="text"
+                name="co_principle_investigators_univ"
+                placeholder="Univ/ Institution: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">College:</label>
+              <input
+                type="text"
+                name="co_principle_investigators_college"
+                placeholder="College:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Department: </label>
+              <input
+                type="text"
+                name="co_principle_investigators_department"
+                placeholder="Department: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Employee ID#: </label>
+              <input
+                type="text"
+                name="co_principle_investigators_employee_ID"
+                placeholder="Employee ID#: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Email:</label>
+              <input
+                type="email"
+                name="co_principle_investigators_mail"
+                placeholder="Email:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-lg-12">
+            <button
+              type="button"
+              name="co_principle_investigators_add"
+              class="btn btn-outline-primary btn-sm mt-1 add_more"
+            >
+              + Click To Add More
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-3">Co Investigators Names</h4>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Name:</label>
+              <input
+                type="text"
+                name="co_investigators_name"
+                placeholder="Name:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Univ/ Institution: </label>
+              <input
+                type="text"
+                name="co_investigators_univ"
+                placeholder="Univ/ Institution: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">College:</label>
+              <input
+                type="text"
+                name="co_investigators_college"
+                placeholder="College:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Department: </label>
+              <input
+                type="text"
+                name="co_investigators_department"
+                placeholder="Department: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">ID: </label>
+              <input
+                type="text"
+                name="co_investigators_ID"
+                placeholder="ID:  "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Role in project: </label>
+              <input
+                type="text"
+                name="co_investigators_role"
+                placeholder="Role in project: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Employee or student ID: </label>
+              <input
+                type="text"
+                name="co_investigators_student_ID"
+                placeholder="Employee or student ID: "
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-lg-12">
+            <button
+              type="button"
+              name="co_investigators_add"
+              class="btn btn-outline-primary btn-sm mt-1 add_more"
+            >
+              + Click To Add More
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+            <fieldset class="form-group d-flex align-items-center">
+              <label for="basicInput" class="mb-0"
+                >Human Subjects Involved?</label
+              >
+              <label class="switch mb-0 mx-1">
+                <input
+                  type="checkbox"
+                  name="human_subjects_involved"
+                  value="1"
+                />
+                <span class="slider round"></span>
+              </label>
+              <span> YES / NO </span>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+            <fieldset class="form-group d-flex align-items-center">
+              <label for="basicInput" class="mb-0"
+                >Project Exempt from regulations?</label
+              >
+              <label class="switch mb-0 mx-1">
+                <input
+                  type="checkbox"
+                  name="project_exempt_from_regulations?"
+                  value="1"
+                />
+                <span class="slider round"></span>
+              </label>
+              <span> YES / NO </span>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+            <fieldset class="form-group d-flex align-items-center">
+              <label for="basicInput" class="mb-0"
+                >Are Vertebrate Animals Used?</label
+              >
+              <label class="switch mb-0 mx-1">
+                <input
+                  type="checkbox"
+                  name="are_vertebrate_animals_used"
+                  value="1"
+                />
+                <span class="slider round"></span>
+              </label>
+              <span> YES / NO </span>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+            <fieldset class="form-group d-flex align-items-center">
+              <label for="basicInput" class="mb-0"
+                >Does this Project Have an Actual or Potential Impact - positive
+                or negative - on the environment?</label
+              >
+              <label class="switch mb-0 mx-1">
+                <input type="checkbox" name="environment_impact" value="1" />
+                <span class="slider round"></span>
+              </label>
+              <span class="flex-shrink-0"> YES/NO </span>
+            </fieldset>
+          </div>
+
+          <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+            <div class="form-actions" style="border: 0">
+              <button
+                type="submit"
+                name="action"
+                value="draft"
+                class="btn btn-raised btn-primary"
+              >
+                Save Draft
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+            <div class="float-left mt-1">
+              <label
+                ><input type="checkbox" name="check1" id="customSwitches"
+              /></label>
+              I agree to the Terms. Learn about how we use and protect your data
+              in our Privacy Policy. You will not be able to change the proposal
+              once submitted.
+            </div>
+          </div>
+          <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+            <div class="form-actions" style="border: 0">
+              <button
+                type="submit"
+                name="action"
+                value="new"
+                class="btn btn-raised btn-success"
+              >
+                Submit
+              </button>
+              <a
+                href="https://www.rmsystem.cloud/applications/perposals"
+                class="btn btn-raised btn-primary"
+                >Redirect Back</a
+              >
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

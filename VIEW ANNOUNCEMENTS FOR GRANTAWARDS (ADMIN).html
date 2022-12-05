@@ -1,0 +1,767 @@
+<div class="card">
+  <div class="card-header mb-2 text-center">
+    <h4 class="card-title mb-0">VIEW ANNOUNCEMENTS FOR GRANT/AWARDS (ADMIN)</h4>
+  </div>
+  <div class="card-body">
+    <div class="px-3">
+      <div class="col-md-12">
+        ////////////// table here //////////////
+        <div class="col-lg-1 col-md-1">
+          <button
+            type="button"
+            name="new_announcement"
+            class="btn btn-outline-primary btn-sm mt-1 add_more_files"
+          >
+            + Create New Announcement for Proposal
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="px-3">
+      <form
+        class="form"
+        action=""
+        method="post"
+        enctype=""
+        onsubmit=""
+        style="padding: 10px"
+      >
+        <input type="hidden" name="announce_id" value="30" />
+        <input type="hidden" name="submission_id" value="2022-28198" />
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-1">
+              CREATE NEW / EDIT ANNOUNCEMENTS FOR Grants/Awards
+            </h4>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Submission Title </label>
+              <input
+                type="text"
+                name="submission_title"
+                placeholder="Submission Title"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Committee Name: *</label>
+              <input
+                type="text"
+                name="committee_name"
+                placeholder="Committee Name: *"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                >Edit Applicants Instructions (Submission and Review Criteria):
+                *</label
+              >
+              <textarea
+                name="app_instructions"
+                required=""
+                placeholder="You are editing so the old instructions will display in the textarea"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Edit Reviewers Instructions: *</label>
+              <textarea
+                name="reviewers_instructions"
+                required=""
+                placeholder=" You are editing so the old instructions will display in the textarea"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-3">
+              UPLOAD SUPPORTING DOCUMENTS FILES/TEMPLATES
+            </h4>
+          </div>
+          <div class="col-lg-1 col-md-1">
+            <button
+              type="button"
+              name="button"
+              class="btn btn-outline-primary btn-sm mt-1 add_more_files"
+            >
+              Click To Add Attachments
+            </button>
+          </div>
+          <div class="col-xl-12 col-lg-12 add_more_files_fields">
+            <div class="row">
+              <div class="col-xl-5 col-lg-5 mb-2">
+                <fieldset class="form-group">
+                  <label for="basicInput">File Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    required=""
+                    name="file_label[]"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-5 col-lg-5 mb-2">
+                <label for="file">Upload File</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01"
+                      >Upload</span
+                    >
+                  </div>
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      required=""
+                      aria-describedby="inputGroupFileAddon01"
+                      name="attachments[]"
+                    />
+                    required
+                    <label class="custom-file-label" for="inputGroupFile01"
+                      >Choose File</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-1 text-danger"></div>
+            </div>
+          </div>
+
+          ////////////// table here //////////////
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-3">Submission settings</h4>
+          </div>
+          <div class="col-12 mb-1">
+            <fieldset class="form-group d-flex align-items-center">
+              <label for="basicInput" class="mb-0"
+                >Allow users to submit proposals</label
+              >
+              <label class="switch mb-0 mx-1" style="flex-shrink: 0"
+                ><input
+                  type="checkbox"
+                  name="user_submit_permission"
+                  value="1" /><span class="slider round"></span
+              ></label>
+              <span>YES/NO</span>
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                >Start date for submission (datetime format)
+              </label>
+              <input
+                type="datetime-local"
+                name="Start_submission"
+                placeholder="Date and Time"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                >Last date for submissions (datetime field)</label
+              >
+              <input
+                type="datetime-local"
+                name="Last"
+                placeholder="Date and Time"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-12 mb-1">
+            <fieldset class="form-group d-flex align-items-center">
+              <label for="basicInput" class="mb-0"
+                >Allow users to withdraw their submissions</label
+              >
+              <label class="switch mb-0 mx-1" style="flex-shrink: 0"
+                ><input
+                  type="checkbox"
+                  name="user_withdraw_permission"
+                  value="1" /><span class="slider round"></span
+              ></label>
+              <span>YES/NO</span>
+            </fieldset>
+          </div>
+          <div class="col-12 mb-1">
+            <fieldset class="form-group d-flex align-items-center">
+              <label for="basicInput" class="mb-0"
+                >Allow users to resubmit revisions</label
+              >
+              <label class="switch mb-0 mx-1" style="flex-shrink: 0"
+                ><input
+                  type="checkbox"
+                  name="user_resubmit_permission"
+                  value="1" /><span class="slider round"></span
+              ></label>
+              <span>YES/NO</span>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-3">
+              Grants/ Awards Announcements Setting
+            </h4>
+          </div>
+          <div class="col-lg-6 mb-1">
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <h6>Funding Type:</h6>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="fund_type"
+                  value="1"
+                  class="custom-control-input"
+                  id="fund_type1"
+                />
+                <label class="custom-control-label" for="fund_type1"
+                  >Grant
+                </label>
+              </div>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="fund_type"
+                  value="2"
+                  class="custom-control-input"
+                  id="fund_type2"
+                />
+                <label class="custom-control-label" for="fund_type2"
+                  >Award
+                </label>
+              </div>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="fund_type"
+                  value="3"
+                  class="custom-control-input"
+                  id="fund_type3"
+                />
+                <label class="custom-control-label" for="fund_type3"
+                  >Other
+                </label>
+                <input
+                  type="text"
+                  name="other_fund_type"
+                  required=""
+                  class="form-control col-xl-6"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-1">
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <h6>Application Type</h6>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="app_type"
+                  value="1"
+                  class="custom-control-input"
+                  id="very_familiar_txt1"
+                />
+                <label class="custom-control-label" for="very_familiar_txt1"
+                  >New
+                </label>
+              </div>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+              <div class="custom-control">
+                <input
+                  type="radio"
+                  name="app_type"
+                  value="2"
+                  class="custom-control-input"
+                  id="app_type2"
+                />
+                <label class="custom-control-label" for="app_type2"
+                  >other
+                </label>
+                <input
+                  type="text"
+                  name="other_app_type"
+                  required=""
+                  class="form-control col-xl-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Funding Organization:</label>
+              <input
+                type="text"
+                name="fund_org"
+                placeholder="Funding Organization:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Administration Information:</label>
+              <input
+                type="text"
+                name="admin_info"
+                placeholder="Administration Information:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Funding Program:</label>
+              <input
+                type="text"
+                name="fund_prog"
+                placeholder="Funding Program:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Program Type/ Code:</label>
+              <input
+                type="text"
+                name="prog_type"
+                placeholder="Program Type/ Code:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Funding Opportunity Title:</label>
+              <input
+                type="text"
+                name="fund_title"
+                placeholder="Funding Opportunity Title:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Pre-registration:</label>
+              <input
+                type="date"
+                name="pre_reg"
+                placeholder="Pre-registration:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Open Submission:</label>
+              <input
+                type="date"
+                name="open_sub"
+                placeholder="Open Submission:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Application Submission Deadline:</label>
+              <input
+                type="date"
+                name="submission_deadline"
+                placeholder="Application Submission Deadline:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Registration Deadline:</label>
+              <input
+                type="date"
+                name="reg_deadline"
+                placeholder="Registration Deadline:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Communication With Applicants:</label>
+              <input
+                type="date"
+                name="communication_with_app"
+                placeholder="Communication With Applicants:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Winner Announcement:</label>
+              <input
+                type="date"
+                name="winner_announcement"
+                placeholder="Winner Announcement:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Earliest Project Start:</label>
+              <input
+                type="date"
+                name="earliest_project_start"
+                placeholder="Earliest Project Start:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Budget:</label>
+              <input
+                type="text"
+                name="budget"
+                placeholder="Budget:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Project Period:</label>
+              <input
+                type="text"
+                name="project_period"
+                placeholder="Project Period:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Expected Number of Awards:</label>
+              <input
+                type="text"
+                name="expected_number_of_awards:"
+                placeholder="Expected Number of Awards:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Cost Sharing Requirement:</label>
+              <input
+                type="text"
+                name="cost_sharing_requirement"
+                placeholder="Cost Sharing Requirement:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Eligibility"</label>
+              <input type="text" name="eligibility" placeholder="Eligibility""
+              class="form-control" />
+            </fieldset>
+          </div>
+          <div class="col-xl-4 col-lg-6 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Eligible Applicants:</label>
+              <input
+                type="text"
+                name="eligible_app"
+                placeholder="Eligible Applicants:"
+                class="form-control"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <textarea
+                name="textarea"
+                required=""
+                placeholder=""
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Additional information</label>
+              <textarea
+                name="additional_information"
+                required=""
+                placeholder="Additional information"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Scope:</label>
+              <textarea
+                name="scope"
+                required=""
+                placeholder="Scope:"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Description:</label>
+              <textarea
+                name="description"
+                required=""
+                placeholder="Description:"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Funding Activity (Area):</label>
+              <textarea
+                name="funding_activity"
+                required=""
+                placeholder="Funding Activity (Area):"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Objectives:</label>
+              <textarea
+                name="abjectives"
+                required=""
+                placeholder="Objectives:"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">
+                Mapping to the Organization Strategic goals:
+              </label>
+              <textarea
+                name="mapping_to_the_organization_strategic_goals"
+                required=""
+                placeholder="Mapping to the Organization Strategic goals:"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Indicator of Success</label>
+              <textarea
+                name="indicator_of_success"
+                required=""
+                placeholder="Indicator of Success"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Other Information:</label>
+              <textarea
+                name="other_information:"
+                required=""
+                placeholder="Other Information:"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Grantor Contact Information:</label>
+              <textarea
+                name="grantor_contact_information:"
+                required=""
+                placeholder="Other Information:"
+                class="form-control"
+                rows="5"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h4 class="card-title mb-3">Proposal reviewer settings</h4>
+          </div>
+          <div class="col-lg-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput">Select Review Model</label>
+              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                <div class="custom-control">
+                  <input
+                    type="radio"
+                    name="rev_model"
+                    value="1"
+                    class="custom-control-input"
+                    id="rev_model1"
+                  />
+                  <label class="custom-control-label" for="rev_model1">
+                    Single blind: Author doesn't know the identity of the
+                    reviewer, and reviewers doesn't know the identity of the
+                    other reviewers
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                <div class="custom-control">
+                  <input
+                    type="radio"
+                    name="rev_model"
+                    value="2"
+                    class="custom-control-input"
+                    id="rev_model2"
+                  />
+                  <label class="custom-control-label" for="rev_model2">
+                    Double blind: Reviewer doesn't know the identity of the
+                    author, and reviewers doesn't know the identity of the other
+                    reviewers, and vice-versa.
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                <div class="custom-control">
+                  <input
+                    type="radio"
+                    name="rev_model"
+                    value="3"
+                    class="custom-control-input"
+                    id="rev_model3"
+                  />
+                  <label class="custom-control-label" for="rev_model3">
+                    Reviewers open Peer review: The identity of the reviewers is
+                    known by all reviewers, during or after the review process.
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                <div class="custom-control">
+                  <input
+                    type="radio"
+                    name="rev_model"
+                    value="4"
+                    class="custom-control-input"
+                    id="rev_model4"
+                  />
+                  <label class="custom-control-label" for="rev_model4">
+                    Applicant open Peer review: The identity of the applicant
+                    and reviewers is known by all, during or after the review
+                    process.
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-xl-12 mb-1">
+            <fieldset class="form-group">
+              <label for="basicInput"
+                >Signature requested from the applicant.</label
+              >
+              <textarea
+                name="signature"
+                required=""
+                placeholder=""
+                class="form-control"
+                rows="10"
+                cols="80"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-lg-12 col-md-1">
+            <button
+              type="button"
+              name="update_announcement"
+              class="btn btn-outline-primary btn-sm mt-1 update_announcement"
+            >
+              Update Announcement for Proposal
+            </button>
+          </div>
+          <div class="col-lg-12 col-md-1">
+            <button
+              type="button"
+              name="add_announcement"
+              class="btn btn-outline-primary btn-sm mt-1 add_announcement"
+            >
+              + Create New Announcement for Proposal
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

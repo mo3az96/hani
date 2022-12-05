@@ -1,0 +1,3762 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
+    />
+    <meta name="author" content="hani Elamir" />
+    <title>Submission Page</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Montserrat:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- BEGIN VENDOR CSS-->
+    <!-- font icons-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/fonts/feather/style.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/fonts/simple-line-icons/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/fonts/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/vendors/css/perfect-scrollbar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/vendors/css/prism.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/vendors/css/chartist.min.css"
+    />
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/css/app.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/css/custom.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/css/invoice.css"
+    />
+    <!-- END  CSS-->
+    <!-- END Custom CSS-->
+
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/core/jquery-3.2.1.min.js"
+      type="text/javascript"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/datatable/datatables.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.rmsystem.cloud/app-assets/datatable/datatables.min.js"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="https://www.rmsystem.cloud/app-assets/images/logo.jpg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://www.rmsystem.cloud/js/standalone/selectize.js"></script>
+    <style media="screen">
+      .select2-container--default .select2-selection--single {
+        height: 38px;
+      }
+      .select2-container--default
+        .select2-selection--single
+        .select2-selection__rendered {
+        line-height: 36px;
+      }
+      .select2-container--default
+        .select2-selection--single
+        .select2-selection__arrow {
+        top: 7px;
+      }
+      .ql-editor {
+        height: 220px !important;
+      }
+      .custom-file {
+        z-index: 0 !important;
+      }
+      form label {
+        color: black !important;
+      }
+      .readonlyfield {
+        background-color: grey;
+      }
+
+      .fix-img-size {
+        max-height: 90px;
+        max-width: 90px;
+      }
+    </style>
+  </head>
+  <body data-col="2-columns" class="2-columns">
+    <div class="wrapper">
+      <div class="main-content">
+        <!-- main menu-->
+        <!--.main-menu(class="#{menuColor} #{menuOpenType}", class=(menuShadow == true ? 'menu-shadow' : ''))-->
+        <div
+          data-active-color="white"
+          data-background-color="white"
+          data-image="https://www.rmsystem.cloud/uploads/"
+          class="app-sidebar"
+        >
+          <!-- main menu header-->
+          <!-- Sidebar Header starts-->
+          <div class="sidebar-header">
+            <a href="https://www.rmsystem.cloud/">
+              <div class="logo clearfix" style="padding-top: 30px">
+                <img
+                  src="https://www.rmsystem.cloud/uploads/1420892784logo.jpg"
+                  class="text align-middle"
+                  style="max-height: 125px; max-width: 215px"
+                  alt="1420892784logo"
+                />
+                <!-- <strong class="text" style="color:#fff; font-size: 20px;">
+          Martinbornilla
+          </strong> -->
+              </div></a
+            >
+          </div>
+          <!-- Sidebar Header Ends-->
+          <!-- / main menu header-->
+          <!-- main menu content -->
+          <div class="sidebar-content">
+            <div class="nav-container">
+              <ul
+                id="main-menu-navigation"
+                data-menu="menu-navigation"
+                class="navigation navigation-main"
+              >
+                <li class="nav-item">
+                  <a href="https://www.rmsystem.cloud/dashboard"
+                    ><span
+                      data-i18n=""
+                      class="menu-title"
+                      style="font-size: 14px !important"
+                      >Dashboard</span
+                    ></a
+                  >
+                </li>
+                <li class="has-sub nav-item">
+                  <a
+                    ><span data-i18n="" class="menu-title"
+                      >Institutions</span
+                    ></a
+                  >
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/add_organization"
+                        class="menu-item"
+                        >Add Institution</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/organizations"
+                        class="menu-item"
+                        >View Institutions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a><span data-i18n="" class="menu-title">Colleges</span></a>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/add_college"
+                        class="menu-item"
+                        >Add College</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/colleges"
+                        class="menu-item"
+                        >View Colleges</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a
+                    ><span data-i18n="" class="menu-title">Departments</span></a
+                  >
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/add_department"
+                        class="menu-item"
+                        >Add Department</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/departments"
+                        class="menu-item"
+                        >View Departments</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a><span data-i18n="" class="menu-title">Labs</span></a>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/add_lab"
+                        class="menu-item"
+                        >Add Lab</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/labs"
+                        class="menu-item"
+                        >View Labs</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/mylab"
+                        class="menu-item"
+                        >My Lab</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a><span data-i18n="" class="menu-title">Equipments</span></a>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/add_machine"
+                        class="menu-item"
+                        >Add Equipment</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/machines"
+                        class="menu-item"
+                        >View Equipments</a
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="has-sub nav-item">
+                      <a
+                        ><span data-i18n="" class="menu-title"
+                          >Usage Requests</span
+                        ></a
+                      >
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/generate_usage_request/xy"
+                            class="menu-item"
+                            >Generate Request</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/view_usage_requests"
+                            class="menu-item"
+                            >View Requests</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="has-sub nav-item">
+                      <a
+                        ><span data-i18n="" class="menu-title"
+                          >Maintenance</span
+                        ></a
+                      >
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/generate_maintenance_request/xy"
+                            class="menu-item"
+                            >Generate Request</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/system_requests"
+                            class="menu-item"
+                            >Automatic Requests</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/user_requests"
+                            class="menu-item"
+                            >Users Requests</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="has-sub nav-item">
+                      <a><span data-i18n="" class="menu-title">Orders</span></a>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/add_order"
+                            class="menu-item"
+                            >Create Order</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/orders"
+                            class="menu-item"
+                            >View Orders</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a
+                    ><span data-i18n="" class="menu-title"
+                      >Chemical Inventory</span
+                    ></a
+                  >
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/add_storage"
+                        class="menu-item"
+                        >Add Storage</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/chemical_inventory"
+                        class="menu-item"
+                        >Inventory</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/generate_chemical_request"
+                        class="menu-item"
+                        >Add Chemical request</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/chemical_requests"
+                        class="menu-item"
+                        >Requests</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a
+                    ><span data-i18n="" class="menu-title"
+                      >Animal inventory</span
+                    ></a
+                  >
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/cages"
+                        class="menu-item"
+                        >Cages</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/animals"
+                        class="menu-item"
+                        >Animals</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/animal_inventory"
+                        class="menu-item"
+                        >Inventory</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/animal_requests"
+                        class="menu-item"
+                        >Requests</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a
+                    ><span data-i18n="" class="menu-title"
+                      >Wastage Requests</span
+                    ></a
+                  >
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/generate_wastage_request"
+                        class="menu-item"
+                        >Generate Request</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/wastage_requests"
+                        class="menu-item"
+                        >View Requests</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a><span data-i18n="" class="menu-title">Invoice</span></a>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/invoices"
+                        class="menu-item"
+                        >View Invoices</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/quotations"
+                        class="menu-item"
+                        >View Quotations</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/purchases"
+                        class="menu-item"
+                        >View Purchases</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item open">
+                  <a
+                    ><span data-i18n="" class="menu-title"
+                      >Applications</span
+                    ></a
+                  >
+                  <ul class="menu-content" active="">
+                    <li class="has-sub nav-item open">
+                      <a
+                        ><span data-i18n="" class="menu-title"
+                          >Proposals</span
+                        ></a
+                      >
+                      <ul class="menu-content">
+                        <li class="active">
+                          <a
+                            href="https://www.rmsystem.cloud/applications/perposals"
+                            class="menu-item"
+                            >Annoucements</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/track_applications"
+                            class="menu-item"
+                            >Track Applications</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/application_reviews"
+                            class="menu-item"
+                            >Review Setting</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="has-sub nav-item">
+                      <a><span data-i18n="" class="menu-title">IRB</span></a>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/irb/perposals"
+                            class="menu-item"
+                            >Annoucements</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/track_applications_irb"
+                            class="menu-item"
+                            >Track Applications</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="menu-content">
+                        <li class="">
+                          <a
+                            href="https://www.rmsystem.cloud/application_reviews_irb"
+                            class="menu-item"
+                            >Review Setting</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li>
+                      <a href="#" class="menu-item">IACUC</a>
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li>
+                      <a href="#" class="menu-item">Biosafety</a>
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li>
+                      <a href="#" class="menu-item">Grants</a>
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li>
+                      <a href="#" class="menu-item">Awards</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a><span data-i18n="" class="menu-title">Projects</span></a>
+                </li>
+                <li>
+                  <a><span data-i18n="" class="menu-title">Strategy</span></a>
+                </li>
+                <li>
+                  <a
+                    ><span data-i18n="" class="menu-title"
+                      >Customer Services</span
+                    ></a
+                  >
+                </li>
+                <li class="has-sub nav-item">
+                  <a><span data-i18n="" class="menu-title">Users</span></a>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/create_user"
+                        class="menu-item"
+                        >Create User</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/view_active_users"
+                        class="menu-item"
+                        >View Active Users</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/view_deactive_users"
+                        class="menu-item"
+                        >View Deactive Users</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a><span data-i18n="" class="menu-title">Roles</span></a>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/add_role"
+                        class="menu-item"
+                        >Create Role</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/roles"
+                        class="menu-item"
+                        >View Roles</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub nav-item">
+                  <a><span data-i18n="" class="menu-title">Setting</span></a>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/setting"
+                        class="menu-item"
+                        >General Setting</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/registeration_email_template"
+                        class="menu-item"
+                        >Registration Email<br />
+                        Template</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="menu-content">
+                    <li class="">
+                      <a
+                        href="https://www.rmsystem.cloud/qr_setting"
+                        class="menu-item"
+                        >QR Setting<br />
+                        Template</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              </ul>
+            </div>
+          </div>
+          <!-- main menu content-->
+          <div class="sidebar-background"></div>
+          <!-- main menu footer-->
+          <!-- include includes/menu-footer-->
+          <!-- main menu footer-->
+        </div>
+        <!-- / main menu-->
+        <div class="main-panel">
+          <!-- Navbar (Header) Starts-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  data-toggle="collapse"
+                  class="navbar-toggle d-lg-none float-left"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                </button>
+              </div>
+              <div class="navbar-container">
+                <div
+                  id="navbarSupportedContent"
+                  class="collapse navbar-collapse"
+                >
+                  <ul class="navbar-nav">
+                    <!--                        <li class="dropdown nav-item mt-1"><a id="dropdownBasic3" href="#" data-toggle="dropdown"-->
+                    <!--                                class="nav-link position-relative dropdown-toggle"><i style="font-size: 24px;"-->
+                    <!--                                    class="fa fa-language"></i><span class="selected-language d-none"></span></a>-->
+                    <!--                            <div class="dropdown-menu dropdown-menu-right text-left">-->
+                    <!--                                <a href="javascript:void(0)" class="dropdown-item py-1 change_language" data="ENG">-->
+                    <!--                                    English</span></a>-->
+                    <!--                                <a href="javascript:void(0)" class="dropdown-item py-1 change_language" data="AR">-->
+                    <!--                                    Arabic</span></a>-->
+                    <!--                            </div>-->
+                    <!--                        </li>-->
+                    <li class="dropdown nav-item">
+                      <a
+                        id="dropdownBasic2"
+                        href="#"
+                        data-toggle="dropdown"
+                        class="nav-link position-relative dropdown-toggle"
+                        ><span
+                          class="notification badge badge-pill badge-danger"
+                          >17</span
+                        >
+                        <p class="d-none">Notifications</p></a
+                      >
+                      <div
+                        class="notification-dropdown dropdown-menu dropdown-menu-right"
+                        style="width: 400px"
+                      >
+                        <div class="noti-list" style="width: 400px">
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/633"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >New Maintenance request has generated</span
+                              >
+                              <span class="noti-text"
+                                >04-Nov-2022 04:36 pm</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/632"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >Usage request has accepted</span
+                              >
+                              <span class="noti-text"
+                                >02-Nov-2022 06:28 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/631"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >Usage request has accepted</span
+                              >
+                              <span class="noti-text"
+                                >02-Nov-2022 06:28 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/630"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >Usage request has accepted</span
+                              >
+                              <span class="noti-text"
+                                >02-Nov-2022 06:28 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/629"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >The chemical request for admin has been
+                                accepted</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:20 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/628"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >Your chemical request has been accepted</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:20 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/627"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >The chemical request for admin has been
+                                accepted</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:20 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/626"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >Your chemical request has been accepted</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:20 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/625"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >The chemical request for admin has been
+                                accepted</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:19 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/624"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >Your chemical request has been accepted</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:19 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/623"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >New Wastage request has been generated</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:14 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/622"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >New Wastage request has been generated</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:13 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/621"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >New Wastage request has been generated</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:13 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/620"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >New Wastage request has been generated</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:12 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/619"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >New Wastage request has been generated</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:10 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/618"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >New Maintenance request has generated</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:08 am</span
+                              ></span
+                            ></a
+                          >
+                          <a
+                            href="https://www.rmsystem.cloud/admin/open_notification/617"
+                            class="dropdown-item noti-container py-3 border-bottom border-bottom-blue-grey border-bottom-lighten-4"
+                            ><span class="noti-wrapper"
+                              ><span
+                                class="noti-title line-height-1 d-block text-bold-400 info"
+                                >New Maintenance request has generated</span
+                              >
+                              <span class="noti-text"
+                                >31-Oct-2022 01:08 am</span
+                              ></span
+                            ></a
+                          >
+                        </div>
+                        <a
+                          href="https://www.rmsystem.cloud/notifications"
+                          class="noti-footer primary text-center d-block border-top border-top-blue-grey border-top-lighten-4 text-bold-400 py-1"
+                          >Show All Notifications</a
+                        >
+                      </div>
+                    </li>
+                    <li class="dropdown nav-item mt-0">
+                      <a
+                        id="dropdownBasic3"
+                        href="#"
+                        data-toggle="dropdown"
+                        class="nav-link position-relative dropdown-toggle"
+                        style="padding: 0px; padding-bottom: 1px"
+                        ><!-- <i class="ft-user font-medium-3 blue-grey darken-4"></i> -->
+                        <img
+                          src="https://www.rmsystem.cloud/uploads/users/766539831Picture1.jpg"
+                          alt="766539831Picture1"
+                          style="max-width: 46px; max-height: 46px"
+                        />
+                        admin
+                        <p class="d-none">User Settings</p></a
+                      >
+                      <div
+                        ngbdropdownmenu=""
+                        aria-labelledby="dropdownBasic3"
+                        class="dropdown-menu dropdown-menu-right"
+                      >
+                        <a
+                          href="https://www.rmsystem.cloud/edit_profile"
+                          class="dropdown-item"
+                          ><span>Edit Profile</span></a
+                        >
+                        <a
+                          href="https://www.rmsystem.cloud/view_profile"
+                          class="dropdown-item"
+                          ><span>View Profile</span></a
+                        >
+                        <a
+                          href="https://www.rmsystem.cloud/Auth/logout"
+                          class="dropdown-item"
+                          ><span>Logout</span></a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar (Header) Ends-->
+          <div class="main-content">
+            <div class="content-wrapper">
+              <!-- Basic Elements start -->
+              <section class="basic-elements">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header mb-2 text-center">
+                        <h4 class="card-title mb-0">Submission Page</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="px-3">
+                          <div class="col-md-12">
+                            <h4 class="card-title mb-0">Guidlines</h4>
+                            <p>
+                              Should be guidline text message at the top of the
+                              page that admin added in the settings page which
+                              shows the application procedure and application
+                              file templates. User here will download the
+                              templates the admin added(merged file for all pdfs
+                              admin uploaded) for the applicaton and then
+                              upload... this form will allow one file
+                              downloading and uploading Deadlines for opning and
+                              closing will be in the guidlines.
+                            </p>
+                            <h4 class="card-title mb-0">
+                              Download Template Documents
+                            </h4>
+                            <p>
+                              (Upload restricted to 100MB and only pdf allowed)
+                              Click to Upload Application template Multiple
+                              Attachment buton here just like in add equipment
+                              but with files and descriptions
+                            </p>
+                            <div class="table-responsive">
+                              <table
+                                class="table table-striped table-bordered table-hover table-checkable order-column display"
+                                id="AnimalsDataTable1"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>S.No</th>
+                                    <th>File Name</th>
+                                    <th>File Description</th>
+                                    <th>File Order</th>
+                                  </tr>
+                                </thead>
+                              </table>
+                            </div>
+                            <!--                                    <div>-->
+                            <!--                                        <a class="btn btn-raised btn-primary"-->
+                            <!--                                            href="#">--><!--</a>-->
+                            <!--                                    </div>-->
+                            <h1>Applicant Details</h1>
+                          </div>
+                        </div>
+                        <div class="px-3">
+                          <form
+                            class="form"
+                            action="https://www.rmsystem.cloud/applications/save_application"
+                            method="post"
+                            enctype="multipart/form-data"
+                            onsubmit="return checkFileSizes()"
+                            style="padding: 10px"
+                          >
+                            <input
+                              type="hidden"
+                              name="announce_id"
+                              value="30"
+                            />
+                            <input
+                              type="hidden"
+                              name="submission_id"
+                              value="2022-28198"
+                            />
+                            <div class="form-body">
+                              <div class="row mt-3">
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >First Name: (English)</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="first_name_en"
+                                      value="admin"
+                                      readonly
+                                      placeholder="First Name: (English)"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Middle Name: (English)</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="middle_name_en"
+                                      value="admin"
+                                      readonly
+                                      placeholder="Middle Name: (English)"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Last Name: (English) *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="last_name_en"
+                                      value="admin"
+                                      readonly
+                                      placeholder="Last Name: (English)"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >First Name: (Arabic)</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="first_name_ar"
+                                      value="admin"
+                                      readonly
+                                      placeholder="First Name: (English)"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Middle Name: (Arabic)</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="middle_name_ar"
+                                      value="admin"
+                                      readonly
+                                      placeholder="Middle Name: (English)"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Last Name: (Arabic) *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="last_name_ar"
+                                      value="admin"
+                                      readonly
+                                      placeholder="Last Name: (English)"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Position *</label>
+                                    <input
+                                      type="text"
+                                      name="user_title"
+                                      placeholder="Position"
+                                      class="form-control"
+                                      required=""
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Institution *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="institution"
+                                      value="University-SSS-1"
+                                      readonly
+                                      placeholder="Institution"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >College/Division *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="college"
+                                      value=""
+                                      readonly
+                                      placeholder="College/Division"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Department *</label>
+                                    <input
+                                      type="text"
+                                      name="department"
+                                      value="depart"
+                                      readonly
+                                      placeholder="Department"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Status *</label>
+                                    <input
+                                      type="text"
+                                      name="user_status"
+                                      value="2"
+                                      readonly
+                                      placeholder="Status"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">ID *</label>
+                                    <input
+                                      type="text"
+                                      name="id_numb"
+                                      value=""
+                                      readonly
+                                      placeholder="ID"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Univ/Instituion E-mail *</label
+                                    >
+                                    <input
+                                      type="email"
+                                      name="university_email"
+                                      value="m.alhadab@yahoo.com"
+                                      readonly
+                                      placeholder="Univ/Instituion E-mail"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Address Street *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="street"
+                                      placeholder="Address Street"
+                                      class="form-control"
+                                      required=""
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Address City *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="city"
+                                      placeholder="Address City"
+                                      class="form-control"
+                                      required=""
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Address Country *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="country"
+                                      placeholder="Address Country"
+                                      class="form-control"
+                                      required=""
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Zip *</label>
+                                    <input
+                                      type="text"
+                                      name="zip_code"
+                                      required=""
+                                      placeholder="Zip"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Phone Office *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="phone_office"
+                                      value=""
+                                      readonly
+                                      placeholder="Phone Office"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Fax *</label>
+                                    <input
+                                      type="text"
+                                      value=""
+                                      readonly
+                                      name="fax"
+                                      placeholder="Fax"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Phone *</label>
+                                    <input
+                                      type="text"
+                                      value=""
+                                      readonly
+                                      name="phone_main"
+                                      placeholder="Phone"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Emergency no. for after hours *</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="phone_emergency"
+                                      required=""
+                                      placeholder="Phone Office"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div
+                                  class="col-xl-12 col-lg-12 mb-3"
+                                  style="border-bottom: 1px solid"
+                                >
+                                  <h4 class="card-title mb-0 mb-3">
+                                    Application details
+                                  </h4>
+                                </div>
+                                <div class="col-xl-7 col-lg-5 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Project Title English</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="title_en"
+                                      required=""
+                                      placeholder="Project Title English"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-7 col-lg-5 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Project Title Arabic</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="title_ar"
+                                      required=""
+                                      placeholder="Project Title Arabic"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xl-11 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Abstract English</label
+                                    >
+                                    <textarea
+                                      name="abstract_en"
+                                      required=""
+                                      placeholder="Abstract English"
+                                      class="form-control"
+                                      rows="8"
+                                      cols="80"
+                                    ></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-11 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Abstract Arabic<br />
+                                      &nbsp;&nbsp;</label
+                                    >
+                                    <textarea
+                                      name="abstract_ar"
+                                      required=""
+                                      placeholder="Abstract Arabic"
+                                      class="form-control"
+                                      rows="8"
+                                      cols="80"
+                                    ></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-11 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Keywords<br />
+                                      &nbsp;&nbsp;</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="keywords"
+                                      required=""
+                                      placeholder="Keywords"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Estimated Project Funding$<br />
+                                      &nbsp;&nbsp;</label
+                                    >
+                                    <input
+                                      type="number"
+                                      name="funds_estimated"
+                                      value="0"
+                                      required=""
+                                      placeholder="Estimated Project Funding"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Estimated Project Time From<br />
+                                      &nbsp;&nbsp;</label
+                                    >
+                                    <input
+                                      type="date"
+                                      name="date_from"
+                                      placeholder=""
+                                      required=""
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Estimated Project Time To<br />
+                                      &nbsp;&nbsp;</label
+                                    >
+                                    <input
+                                      type="date"
+                                      name="date_to"
+                                      placeholder=""
+                                      required=""
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div
+                                  class="col-xl-12 col-lg-12 mb-3"
+                                  style="border-bottom: 1px solid"
+                                >
+                                  <h4 class="card-title mb-0 mb-3">
+                                    Principle Investigation Names
+                                  </h4>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Assign Principle Investigation</label
+                                    >
+                                    <select
+                                      class="custom-selct userlist"
+                                      name="principle[]"
+                                      required=""
+                                      style="width: 100%"
+                                      data-placeholder="Assign Principle Investigation"
+                                    >
+                                      <option value="1">admin</option>
+                                      <option value="8">aaaaaa</option>
+                                      <option value="9">asfas</option>
+                                      <option value="10">asfh</option>
+                                      <option value="12">safas</option>
+                                      <option value="13">safa</option>
+                                      <option value="57">asa</option>
+                                      <option value="65">aaaaaaa</option>
+                                      <option value="66">sahfjk</option>
+                                      <option value="67">student</option>
+                                      <option value="68">student1</option>
+                                      <option value="71">A</option>
+                                      <option value="72">faculty</option>
+                                      <option value="73">labmanager</option>
+                                      <option value="74">postdoctoral</option>
+                                      <option value="75">himbha9</option>
+                                      <option value="76">researcher</option>
+                                      <option value="77">technician</option>
+                                      <option value="78">musaad</option>
+                                      <option value="90">jojo</option>
+                                      <option value="91">dsadsa</option>
+                                      <option value="97">UserLab5</option>
+                                      <option value="98">user65657</option>
+                                      <option value="99">UserLab6</option>
+                                      <option value="100">MAAA</option>
+                                      <option value="101">sds</option>
+                                      <option value="102">mam</option>
+                                      <option value="103">mamm</option>
+                                      <option value="104">dsd</option>
+                                      <option value="106">SSS</option>
+                                      <option value="107">aaa</option>
+                                      <option value="108">hani</option>
+                                      <option value="115">
+                                        asibai@nbsventure.com
+                                      </option>
+                                      <option value="116">MAA</option>
+                                      <option value="117">MAA2</option>
+                                      <option value="118">M.Husamaddin</option>
+                                    </select>
+                                  </fieldset>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div
+                                  class="col-xl-12 col-lg-12 mb-3"
+                                  style="border-bottom: 1px solid"
+                                >
+                                  <h4 class="card-title mb-0 mb-3">
+                                    Co Principle Investigation Names
+                                  </h4>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Select Co Principle Investigation</label
+                                    >
+                                    <select
+                                      class="custom-selct userlist"
+                                      name="co_principle[]"
+                                      required=""
+                                      multiple
+                                      style="width: 100%"
+                                      data-placeholder="Select Co Principle Investigation"
+                                    >
+                                      <option value="1">admin</option>
+                                      <option value="8">aaaaaa</option>
+                                      <option value="9">asfas</option>
+                                      <option value="10">asfh</option>
+                                      <option value="12">safas</option>
+                                      <option value="13">safa</option>
+                                      <option value="57">asa</option>
+                                      <option value="65">aaaaaaa</option>
+                                      <option value="66">sahfjk</option>
+                                      <option value="67">student</option>
+                                      <option value="68">student1</option>
+                                      <option value="71">A</option>
+                                      <option value="72">faculty</option>
+                                      <option value="73">labmanager</option>
+                                      <option value="74">postdoctoral</option>
+                                      <option value="75">himbha9</option>
+                                      <option value="76">researcher</option>
+                                      <option value="77">technician</option>
+                                      <option value="78">musaad</option>
+                                      <option value="90">jojo</option>
+                                      <option value="91">dsadsa</option>
+                                      <option value="97">UserLab5</option>
+                                      <option value="98">user65657</option>
+                                      <option value="99">UserLab6</option>
+                                      <option value="100">MAAA</option>
+                                      <option value="101">sds</option>
+                                      <option value="102">mam</option>
+                                      <option value="103">mamm</option>
+                                      <option value="104">dsd</option>
+                                      <option value="106">SSS</option>
+                                      <option value="107">aaa</option>
+                                      <option value="108">hani</option>
+                                      <option value="115">
+                                        asibai@nbsventure.com
+                                      </option>
+                                      <option value="116">MAA</option>
+                                      <option value="117">MAA2</option>
+                                      <option value="118">M.Husamaddin</option>
+                                    </select>
+                                  </fieldset>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div
+                                  class="col-xl-12 col-lg-12 mb-3"
+                                  style="border-bottom: 1px solid"
+                                >
+                                  <h4 class="card-title mb-0 mb-3">
+                                    Co Investigator Names
+                                  </h4>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Name</label>
+                                    <input
+                                      type="text"
+                                      name="invest[invest_name][]"
+                                      required=""
+                                      placeholder="Name"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >Univ/Institution</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="invest[invest_institute][]"
+                                      required=""
+                                      placeholder="Univ/Institution"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput"
+                                      >College/Division</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="invest[invest_college][]"
+                                      required=""
+                                      placeholder="College/Division"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Department</label>
+                                    <input
+                                      type="text"
+                                      name="invest[invest_dept][]"
+                                      required=""
+                                      placeholder="Department"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Employee ID</label>
+                                    <input
+                                      type="text"
+                                      name="invest[invest_emp_id][]"
+                                      required=""
+                                      placeholder="Employee ID"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Email</label>
+                                    <input
+                                      type="email"
+                                      name="invest[invest_email][]"
+                                      required=""
+                                      placeholder="Email"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 mb-1">
+                                  <fieldset class="form-group">
+                                    <label for="basicInput">Position</label>
+                                    <input
+                                      type="text"
+                                      name="invest[invest_role][]"
+                                      required=""
+                                      placeholder="Position"
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                                <div
+                                  class="col-xl-1 col-lg-1 text-danger"
+                                ></div>
+                              </div>
+                              <div class="add_more_investigators"></div>
+                              <div class="col-lg-1 col-md-1">
+                                <button
+                                  type="button"
+                                  name="button"
+                                  class="btn btn-outline-primary btn-sm mt-1 add_more_rows"
+                                >
+                                  Click To Add More
+                                </button>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                1- Humen Subjects Involved?
+                                <input
+                                  type="radio"
+                                  name="is_human"
+                                  value="1"
+                                  required=""
+                                  id="is_human_yes"
+                                />
+                                yes
+                                <input
+                                  type="radio"
+                                  name="is_human"
+                                  value="0"
+                                  required=""
+                                  id="is_human_yes"
+                                />
+                                no
+                              </div>
+                              <div
+                                class="row"
+                                id="human_check"
+                                style="display: none"
+                              >
+                                <div class="col-xl-3 col-lg-3 mb-1 mt-1"></div>
+                                <div class="col-xl-9 col-lg-9 mb-1 mt-1">
+                                  is the IRB review Pending ?
+                                  <input
+                                    type="radio"
+                                    name="irb_pending"
+                                    value="1"
+                                    id="number1Switches"
+                                  />
+                                  yes
+                                  <input
+                                    type="radio"
+                                    name="irb_pending"
+                                    value="0"
+                                    id="number1Switches"
+                                  />
+                                  no
+                                </div>
+                                <div class="row">
+                                  <div
+                                    class="col-xl-3 col-lg-3 mb-1 mt-1"
+                                  ></div>
+                                  <div class="col-xl-9 col-lg-9 mb-1 mt-1">
+                                    IRB approval Date :
+                                    <input
+                                      type="date"
+                                      name="irb_approval_date"
+                                    />
+                                  </div>
+                                  <div
+                                    class="col-xl-3 col-lg-3 mb-1 mt-1"
+                                  ></div>
+                                  <div class="col-xl-9 col-lg-9 mb-1 mt-1">
+                                    Human Subject Assurance Number
+                                    <input type="text" name="human_assur_num" />
+                                  </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 mb-1 mt-1"></div>
+                                <div class="col-xl-9 col-lg-9 mb-1 mt-1">
+                                  Is Project Exempt from regulations?
+                                  <input
+                                    type="radio"
+                                    name="federal_accept"
+                                    value="1"
+                                    id="number1Switches"
+                                  />
+                                  yes
+                                  <input
+                                    type="radio"
+                                    name="federal_accept"
+                                    value="0"
+                                    id="number1Switches"
+                                  />
+                                  no
+                                </div>
+                              </div>
+                              <div
+                                class="row"
+                                id="federal_yes"
+                                style="display: none"
+                              >
+                                <div class="col-xl-3 col-lg-3 mb-1 mt-1"></div>
+                                <div class="col-xl-9 col-lg-9 mb-1 mt-1">
+                                  exemption number :
+                                  <input
+                                    type="text"
+                                    name="exemption_number"
+                                    id="number1Switches"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                2- Are Vertebrate Animals Used?
+                                <input
+                                  type="radio"
+                                  name="animal_used"
+                                  required=""
+                                  value="1"
+                                  id="animal_usedyes"
+                                />
+                                yes
+                                <input
+                                  type="radio"
+                                  name="animal_used"
+                                  required=""
+                                  value="0"
+                                  id="animal_used_no"
+                                />
+                                no
+                              </div>
+                              <div
+                                class="row"
+                                id="animal_used_yes"
+                                style="display: none"
+                              >
+                                <div class="col-xl-3 col-lg-3 mb-1 mt-1"></div>
+                                <div class="col-xl-9 col-lg-9 mb-1 mt-1">
+                                  is the IACUC review Pending ?
+                                  <input
+                                    type="radio"
+                                    name="iacuc_pending"
+                                    value="1"
+                                    id="iacuc_pending_yes"
+                                  />
+                                  yes
+                                  <input
+                                    type="radio"
+                                    name="iacuc_pending"
+                                    value="0"
+                                    id="iacuc_pending_no"
+                                  />
+                                  no
+                                </div>
+                                <div class="col-xl-3 col-lg-3 mb-1 mt-1"></div>
+                                <div class="col-xl-9 col-lg-9 mb-1 mt-1">
+                                  IRB approval Date :
+                                  <input
+                                    type="date"
+                                    name="iacuc_approval_date"
+                                  />
+                                </div>
+                                <div class="col-xl-3 col-lg-3 mb-1 mt-1"></div>
+                                <div class="col-xl-9 col-lg-9 mb-1 mt-1">
+                                  Animal Subject Assurance Number
+                                  <input type="text" name="animal_assur_num" />
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                3- is proprietary/privilleged information
+                                included in the application ?
+                                <input
+                                  type="radio"
+                                  name="info_included"
+                                  required=""
+                                  value="1"
+                                  id="info_included_yes"
+                                />
+                                yes
+                                <input
+                                  type="radio"
+                                  name="info_included"
+                                  required=""
+                                  value="0"
+                                  id="info_included_no"
+                                />
+                                no
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                4- Does this project Have an actual or potential
+                                Impact - positive or negitive - on the
+                                envionment ?
+                                <input
+                                  type="radio"
+                                  name="env_impact"
+                                  required=""
+                                  value="1"
+                                  id="env_impact_yes"
+                                />
+                                yes
+                                <input
+                                  type="radio"
+                                  name="env_impact"
+                                  required=""
+                                  value="0"
+                                  id="env_impact_no"
+                                />
+                                no
+                              </div>
+                              <div class="row">
+                                <br />
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                <h4>File Description</h4>
+                              </div>
+                              <div class="col-lg-1 col-md-1">
+                                <button
+                                  type="button"
+                                  name="button"
+                                  class="btn btn-outline-primary btn-sm mt-1 add_more_files"
+                                >
+                                  Click To Add Attachments
+                                </button>
+                              </div>
+                              <div
+                                class="col-xl-12 col-lg-12 add_more_files_fields"
+                              >
+                                <div class="row">
+                                  <div class="col-xl-5 col-lg-5 mb-2">
+                                    <fieldset class="form-group">
+                                      <label for="basicInput">File Name</label>
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        required=""
+                                        name="file_label[]"
+                                      />
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-xl-5 col-lg-5 mb-2">
+                                    <label for="file">Upload File</label>
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <span
+                                          class="input-group-text"
+                                          id="inputGroupFileAddon01"
+                                          >Upload</span
+                                        >
+                                      </div>
+                                      <div class="custom-file">
+                                        <input
+                                          type="file"
+                                          class="custom-file-input"
+                                          required=""
+                                          aria-describedby="inputGroupFileAddon01"
+                                          name="attachments[]"
+                                        />
+                                        required
+                                        <label
+                                          class="custom-file-label"
+                                          for="inputGroupFile01"
+                                          >Choose File</label
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-xl-1 col-lg-1 text-danger"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                <div class="form-actions" style="border: 0">
+                                  <button
+                                    type="submit"
+                                    name="action"
+                                    value="draft"
+                                    class="btn btn-raised btn-primary"
+                                  >
+                                    Save Draft
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                <div class="float-left mt-1">
+                                  <label
+                                    ><input
+                                      type="checkbox"
+                                      name="check1"
+                                      id="customSwitches"
+                                  /></label>
+                                  I agree to the Terms. Learn about how we use
+                                  and protect your data in our Privacy Policy.
+                                  You will not be able to change the proposal
+                                  once submitted.
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                <div class="form-actions" style="border: 0">
+                                  <button
+                                    type="submit"
+                                    name="action"
+                                    value="new"
+                                    class="btn btn-raised btn-success"
+                                  >
+                                    Submit
+                                  </button>
+                                  <a
+                                    href="https://www.rmsystem.cloud/applications/perposals"
+                                    class="btn btn-raised btn-primary"
+                                    >Redirect Back</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div
+            class="attach_file_html"
+            style="display: none !important"
+            id="new_investigator"
+          >
+            <div class="row">
+              <div
+                class="col-xl-12 col-lg-12 mb-3"
+                style="border-bottom: 1px solid"
+              ></div>
+              <div class="col-xl-4 col-lg-6 mb-1">
+                <fieldset class="form-group">
+                  <label for="basicInput">Name</label>
+                  <input
+                    type="text"
+                    name="invest[invest_name][]"
+                    placeholder="Name"
+                    class="form-control"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-4 col-lg-6 mb-1">
+                <fieldset class="form-group">
+                  <label for="basicInput">Univ/Institution</label>
+                  <input
+                    type="text"
+                    name="invest[invest_institute][]"
+                    placeholder="Univ/Institution"
+                    class="form-control"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-4 col-lg-6 mb-1">
+                <fieldset class="form-group">
+                  <label for="basicInput">College/Division</label>
+                  <input
+                    type="text"
+                    name="invest[invest_college][]"
+                    placeholder="College/Division"
+                    class="form-control"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-4 col-lg-6 mb-1">
+                <fieldset class="form-group">
+                  <label for="basicInput">Department</label>
+                  <input
+                    type="text"
+                    name="invest[invest_dept][]"
+                    placeholder="Department"
+                    class="form-control"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-4 col-lg-6 mb-1">
+                <fieldset class="form-group">
+                  <label for="basicInput">Employee ID</label>
+                  <input
+                    type="text"
+                    name="invest[invest_emp_id][]"
+                    placeholder="Employee ID"
+                    class="form-control"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-4 col-lg-6 mb-1">
+                <fieldset class="form-group">
+                  <label for="basicInput">Email</label>
+                  <input
+                    type="email"
+                    name="invest[invest_email][]"
+                    placeholder="Email"
+                    class="form-control"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-4 col-lg-6 mb-1">
+                <fieldset class="form-group">
+                  <label for="basicInput">Position</label>
+                  <input
+                    type="text"
+                    name="invest[invest_role][]"
+                    placeholder="Position"
+                    class="form-control"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-1 col-lg-1 text-danger"></div>
+            </div>
+          </div>
+          <div class="attach_files_html" style="display: none !important">
+            <div class="row">
+              <div class="col-xl-5 col-lg-5 mb-2">
+                <fieldset class="form-group">
+                  <label for="basicInput">File Name</label>
+                  <input type="text" class="form-control" name="file_label[]" />
+                </fieldset>
+              </div>
+              <div class="col-xl-5 col-lg-5 mb-2">
+                <label for="file">Upload File</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01"
+                      >Upload</span
+                    >
+                  </div>
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      aria-describedby="inputGroupFileAddon01"
+                      name="attachments[]"
+                    />
+                    <label class="custom-file-label" for="inputGroupFile01"
+                      >Choose File</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-1 text-danger"></div>
+            </div>
+          </div>
+          <div
+            class="modal fade applicants_invites"
+            id="applicants_invites"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="statusModalTitle"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered2 modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="statusModalTitle">
+                    Select Users (Applicants)
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <form
+                  class="form"
+                  action="https://www.rmsystem.cloud/manage_table"
+                  method="post"
+                >
+                  <input type="hidden" name="table_id" value="4" />
+                  <input
+                    type="hidden"
+                    name="current_route"
+                    value="https://www.rmsystem.cloud/submission_page/WJ"
+                  />
+                  <div class="modal-body view_managetable_">
+                    <div class="col-xl-12 col-lg-12 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput"
+                          >Select Users (Applicants) to invites *</label
+                        >
+                        <input
+                          type="text"
+                          name="unit"
+                          placeholder="Select Users"
+                          class="form-control"
+                          required=""
+                        />
+                      </fieldset>
+                      <div>
+                        <a
+                          class="btn btn-raised btn-primary selectOfficeUserPopup"
+                          href="#"
+                          id="selectOfficeUserPopup"
+                          >Select User</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Email Template *</label>
+                        <textarea
+                          name="depart_description"
+                          class="form-control"
+                          rows="8"
+                          cols="80"
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success">
+                        Submit
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade view_annoucements"
+          id="view_annoucements"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="statusModalTitle"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered2 modal-lg"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="statusModalTitle">
+                  View Annoucements
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form
+                class="form"
+                action="https://www.rmsystem.cloud/save_storage"
+                method="post"
+                enctype="multipart/form-data"
+                onsubmit="return checkFileSizes()"
+                style="padding: 10px"
+              >
+                <div class="form-body">
+                  <div class="row mt-3">
+                    <div class="col-xl-6 col-lg-6 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Submission Title</label>
+                        <input
+                          type="text"
+                          name="lab_location"
+                          placeholder="Submission Title"
+                          class="form-control"
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Committee Name</label>
+                        <input
+                          type="text"
+                          name="sub_lab_location"
+                          placeholder="Committee Name"
+                          class="form-control"
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Institue/University *</label>
+                        <input
+                          type="text"
+                          name="item_name"
+                          placeholder="Institue/University"
+                          class="form-control"
+                          required=""
+                        />
+                      </fieldset>
+                      <div>
+                        <a
+                          class="btn btn-raised btn-primary"
+                          id="selectInstitute"
+                          href="#"
+                          >Select Institute</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">College *</label>
+                        <input
+                          type="text"
+                          name="vender"
+                          placeholder="College"
+                          class="form-control"
+                          required=""
+                        />
+                      </fieldset>
+                      <div>
+                        <a
+                          class="btn btn-raised btn-primary"
+                          id="selectCollege"
+                          href="#"
+                          >Select College</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Department *</label>
+                        <input
+                          type="text"
+                          name="catalog_no"
+                          placeholder="Department"
+                          class="form-control"
+                          required=""
+                        />
+                      </fieldset>
+                      <div>
+                        <a
+                          class="btn btn-raised btn-primary"
+                          id="selectDepartment"
+                          href="#"
+                          >Select Department</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-xl-12 col-lg-12 mb-3"
+                      style="border-bottom: 1px solid"
+                    >
+                      <h4 class="card-title mb-0 mb-3">Application Flow</h4>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-12 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Applicant</label>
+                        <input
+                          type="radio"
+                          name="assignee"
+                          value="1"
+                          checked="checked"
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-12 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Prescreen</label>
+                        <input type="radio" name="assignee" value="2" />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-12 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Edit/Chair</label>
+                        <input type="radio" name="assignee" value="3" />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Office Director</label>
+                        <input type="radio" name="assignee" value="4" />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-12 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">EX. Director</label>
+                        <input type="radio" name="assignee" value="6" />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput">Administration Head</label>
+                        <input type="radio" name="assignee" value="5" />
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput"
+                          >Edit Application Instructions(Submission and Review
+                          Criteria)</label
+                        >
+                        <textarea
+                          name="detail"
+                          placeholder="You are editing so the old instructions will display in textarea"
+                          class="form-control"
+                          rows="8"
+                          cols="80"
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 mb-1">
+                      <fieldset class="form-group">
+                        <label for="basicInput"
+                          >Edit Reviewers Instruction<br />
+                          &nbsp;&nbsp;</label
+                        >
+                        <textarea
+                          name="inv_notes"
+                          placeholder="You are editing so the old instructions will display in textarea"
+                          class="form-control"
+                          rows="8"
+                          cols="80"
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table
+                        class="table table-striped table-bordered table-hover table-checkable order-column display"
+                        id="AnimalsDataTable1"
+                      >
+                        <thead>
+                          <tr>
+                            <th class="nosort">
+                              <input type="checkbox" class="selectall" />
+                            </th>
+                            <th>S.No</th>
+                            <th>File Name</th>
+                            <th>File Description</th>
+                            <th>File Order</th>
+                            <th class="nosort">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input
+                                type="checkbox"
+                                class="check"
+                                name="check[]"
+                                value="16"
+                              />
+                            </td>
+                            <td>1111</td>
+                            <td>abc.pdf</td>
+                            <td>instructions</td>
+                            <td>1</td>
+                            <td>
+                              <a href="#" class="btn small-btn">Edit</a>
+                              <a
+                                href="#"
+                                class="btn small-btn"
+                                onclick="return confirm('Are you sure you want to delete?')"
+                                >Delete</a
+                              >
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input
+                                type="checkbox"
+                                class="check"
+                                name="check[]"
+                                value="16"
+                              />
+                            </td>
+                            <td>1111</td>
+                            <td>abc.pdf</td>
+                            <td>instructions</td>
+                            <td>1</td>
+                            <td>
+                              <a href="#" class="btn small-btn">Edit</a>
+                              <a
+                                href="#"
+                                class="btn small-btn"
+                                onclick="return confirm('Are you sure you want to delete?')"
+                                >Delete</a
+                              >
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                      <h4>Submission settings</h4>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 mb-1 mt-1">
+                      <fieldset class="form-group mt-2">
+                        <label for="basicInput"
+                          >Start date for submission (datermine foramt)</label
+                        >
+                        <input
+                          type="date"
+                          name="exp_date"
+                          class="form-control"
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 mb-1 mt-1">
+                      <fieldset class="form-group mt-2">
+                        <label for="basicInput"
+                          >Last date for submissions (datermine foramt)</label
+                        >
+                        <input
+                          type="date"
+                          name="exp_date"
+                          class="form-control"
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                      <div class="form-actions">
+                        <button
+                          type="submit"
+                          class="btn btn-raised btn-primary"
+                        >
+                          Print
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="ManageOrderTable"
+        tabindex="0"
+        role="dialog"
+        aria-labelledby="statusModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="statusModalTitle">Manage Table</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <form
+              class="form"
+              action="https://www.rmsystem.cloud/manage_table"
+              method="post"
+            >
+              <input type="hidden" name="table_id" value="4" />
+              <input
+                type="hidden"
+                name="current_route"
+                value="https://www.rmsystem.cloud/submission_page/WJ"
+              />
+              <div class="modal-body view_managetable_"></div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade ApproveCommentsModal"
+      id="ApproveCommentsModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered3 modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Approve with comments</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="form app-action"
+            action="https://www.rmsystem.cloud/approve_comments"
+            method="post"
+          >
+            <input type="hidden" name="app_id" id="app_id" />
+            <div class="modal-body view_managetable_">
+              <fieldset class="form-group">
+                <label for="basicInput">Comments</label>
+                <textarea
+                  type="text"
+                  name="approve_comments"
+                  class="form-control"
+                  placeholder="Comments"
+                  required=""
+                ></textarea>
+              </fieldset>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade AcceptCommentsModal"
+      id="AcceptCommentsModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered3 modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Accept with comments</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="form app-action"
+            action="https://www.rmsystem.cloud/accept_comments"
+            method="post"
+          >
+            <input type="hidden" name="app_id" id="app_id" />
+            <div class="modal-body view_managetable_">
+              <fieldset class="form-group">
+                <label for="basicInput">Comments</label>
+                <textarea
+                  type="text"
+                  name="accept_comments"
+                  class="form-control"
+                  placeholder="Comments"
+                  required=""
+                ></textarea>
+              </fieldset>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade ReturnSubAdminCommentsModal"
+      id="ReturnSubAdminCommentsModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered3 modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Return to Sub-admin with Comments</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="form app-action"
+            action="https://www.rmsystem.cloud/return_to_subadmin"
+            method="post"
+          >
+            <input type="hidden" name="app_id" id="app_id" />
+            <div class="modal-body view_managetable_">
+              <fieldset class="form-group">
+                <label for="basicInput">Comments</label>
+                <textarea
+                  type="text"
+                  name="return_subadmin_comments"
+                  class="form-control"
+                  placeholder="Comments"
+                  required=""
+                ></textarea>
+              </fieldset>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade SendEditCommentsModal"
+      id="SendEditCommentsModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered1 modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Comments For Editor</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="form app-action"
+            action="https://www.rmsystem.cloud/send_editor"
+            method="post"
+          >
+            <input type="hidden" name="app_id" id="app_id" />
+            <div class="modal-body view_managetable_">
+              <fieldset class="form-group">
+                <label for="basicInput">Comments</label>
+                <textarea
+                  type="text"
+                  name="send_edit_comments"
+                  class="form-control"
+                  placeholder="Comments"
+                  required=""
+                ></textarea>
+              </fieldset>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade ReturnApplicantCommentsModal"
+      id="ReturnApplicantCommentsModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered2 modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Return to applicant with Comments</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="form app-action"
+            action="https://www.rmsystem.cloud/return_applicant"
+            method="post"
+          >
+            <input type="hidden" name="app_id" id="app_id" />
+            <div class="modal-body view_managetable_">
+              <fieldset class="form-group">
+                <label for="basicInput">Comments</label>
+                <textarea
+                  type="text"
+                  name="return_applicant_comments"
+                  class="form-control"
+                  placeholder="Comments"
+                  required=""
+                ></textarea>
+              </fieldset>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade RejectCommentsModal"
+      id="RejectCommentsModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered2 modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Reject with comments</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="form app-action"
+            action="https://www.rmsystem.cloud/reject_comments"
+            method="post"
+          >
+            <input type="hidden" name="app_id" id="app_id" />
+            <div class="modal-body view_managetable_">
+              <fieldset class="form-group">
+                <label for="basicInput">Comments</label>
+                <textarea
+                  type="text"
+                  name="reject_comments"
+                  class="form-control"
+                  placeholder="Comments"
+                  required=""
+                ></textarea>
+              </fieldset>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="DisplayDepartItemModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statusModalTitle">View</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body view_depart_items"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="DisplayColgItemModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statusModalTitle">View</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body view_colg_items"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="DisplayEditorsModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statusModalTitle">View Editors</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body view_editors"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="DisplaySubAdminsModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statusModalTitle">View Sub-Admins</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body view_subadmins"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="DisplayReviewersModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statusModalTitle">View Reviewers</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body view_reviewers"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Send Invoice Email Modal -->
+    <div
+      class="modal fade"
+      id="updateStatusModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="updateStatusTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statusModalTitle">
+              Send Email To Applicant
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="invoice_email_box"
+            action="https://www.rmsystem.cloud/"
+            method="post"
+          >
+            <input type="hidden" name="model_id" id="model_id" />
+            <div class="modal-body">
+              <div class="row col-md-12">
+                <div class="field-group">
+                  <label for="body">Body:</label>
+                  <textarea
+                    name="body"
+                    id="body"
+                    class="form-control"
+                    rows="5"
+                    required=""
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">Send</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Send Invoice Email Modal -->
+    <div
+      class="modal fade"
+      id="SendEmailModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statusModalTitle">
+              Send Email To Applicant
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="invoice_email_box"
+            action="https://www.rmsystem.cloud/send_email_to_applicant"
+            method="post"
+          >
+            <input type="hidden" name="user_id" id="user_id" />
+            <div class="modal-body">
+              <div class="row col-md-12">
+                <div class="field-group">
+                  <label for="body">Body:</label>
+                  <textarea
+                    name="body"
+                    id="body"
+                    class="form-control"
+                    rows="5"
+                    required=""
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">Send</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade UserReviewerSelectionModal"
+      id="UserReviewerSelectionModal"
+      tabindex="0"
+      role="dialog"
+      aria-labelledby="statusModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered3 modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statusModalTitle">
+              Reviewers (User) Selection Popup
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form
+            class="form"
+            action="https://www.rmsystem.cloud/assign_app_reviewers"
+            method="post"
+          >
+            <input type="hidden" name="app_id" id="app_id" />
+            <div class="modal-body view_managetable_">
+              <div class="col-xl-9 col-lg-9 mb-1" id="reviewer_cont">
+                <fieldset class="form-group">
+                  <label for="reviewer_id">Assign Selected Reviewing</label
+                  ><br />
+                  <select
+                    class="custom-selct"
+                    name="reviewer_id[]"
+                    multiple
+                    style="width: 100%"
+                    data-placeholder="Assign Selected Reviewing"
+                    required=""
+                    id="reviewer_id"
+                  >
+                    <option value="1">admin</option>
+                    <option value="8">aaaaaa</option>
+                    <option value="9">asfas</option>
+                    <option value="10">asfh</option>
+                    <option value="12">safas</option>
+                    <option value="13">safa</option>
+                    <option value="57">asa</option>
+                    <option value="65">aaaaaaa</option>
+                    <option value="66">sahfjk</option>
+                    <option value="67">student</option>
+                    <option value="68">student1</option>
+                    <option value="71">A</option>
+                    <option value="72">faculty</option>
+                    <option value="73">labmanager</option>
+                    <option value="74">postdoctoral</option>
+                    <option value="75">himbha9</option>
+                    <option value="76">researcher</option>
+                    <option value="77">technician</option>
+                    <option value="78">musaad</option>
+                    <option value="90">jojo</option>
+                    <option value="91">dsadsa</option>
+                    <option value="97">UserLab5</option>
+                    <option value="98">user65657</option>
+                    <option value="99">UserLab6</option>
+                    <option value="100">MAAA</option>
+                    <option value="101">sds</option>
+                    <option value="102">mam</option>
+                    <option value="103">mamm</option>
+                    <option value="104">dsd</option>
+                    <option value="106">SSS</option>
+                    <option value="107">aaa</option>
+                    <option value="108">hani</option>
+                    <option value="115">asibai@nbsventure.com</option>
+                    <option value="116">MAA</option>
+                    <option value="117">MAA2</option>
+                    <option value="118">M.Husamaddin</option>
+                  </select>
+                </fieldset>
+              </div>
+              <fieldset class="form-group">
+                <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                  <h6>Select Review Model</h6>
+                </div>
+                <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                  <div class="custom-control">
+                    <input
+                      type="radio"
+                      name="review_setting"
+                      value="full_review"
+                      class="custom-control-input"
+                      id="single_blind_text"
+                      checked
+                    />
+                    <label class="custom-control-label" for="single_blind_text"
+                      >Full Review (all reviewers assigned to the
+                      application)</label
+                    >
+                  </div>
+                </div>
+                <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                  <div class="custom-control">
+                    <input
+                      type="radio"
+                      name="review_setting"
+                      value="designated_review"
+                      class="custom-control-input"
+                      id="double_blind_text"
+                    />
+                    <label class="custom-control-label" for="double_blind_text"
+                      >Designated Review (selected reviewers assigned to the
+                      application)</label
+                    >
+                  </div>
+                </div>
+                <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                  <div class="custom-control">
+                    <input
+                      type="radio"
+                      name="review_setting"
+                      value="expedite_review"
+                      class="custom-control-input"
+                      id="reviewers_open_peer_text"
+                    />
+                    <label
+                      class="custom-control-label"
+                      for="reviewers_open_peer_text"
+                      >Expedite (Editor/Chair + selected reviewers assigned to
+                      the application))</label
+                    >
+                  </div>
+                </div>
+                <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                  <div class="custom-control">
+                    <input
+                      type="radio"
+                      name="review_setting"
+                      value="exempt_review"
+                      class="custom-control-input"
+                      id="applican_open_text"
+                    />
+                    <label class="custom-control-label" for="applican_open_text"
+                      >Exempt (Editor/Chair)</label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+              <div class="col-xl-6 col-lg-6 mb-1 mt-1">
+                <fieldset class="form-group mt-2">
+                  <label for="basicInput">Deadline for Review</label>
+                  <input
+                    type="date"
+                    min="2022-11-29"
+                    name="deadline_review"
+                    class="form-control"
+                    required=""
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                <label class="switch"
+                  ><input type="checkbox" value="1" id="input_email"
+                /></label>
+                <div class="float-left mt-1">Specific Mail</div>
+              </div>
+              <div class="row col-md-12" style="display: none" id="email_cont">
+                <div class="col-xl-9 col-lg-9 mb-1">
+                  <fieldset class="form-group">
+                    <label for="to_mail">Title:</label>
+                    <input
+                      type="text"
+                      name="email_title"
+                      id="email_title"
+                      class="form-control"
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-xl-9 col-lg-9 mb-1">
+                  <fieldset class="form-group">
+                    <label for="to_mail">From:</label>
+                    <input
+                      type="email"
+                      name="from_mail"
+                      id="from_mail"
+                      class="form-control"
+                      value=" &lt;div style="
+                      border:1px=""
+                      solid=""
+                    />
+                    <h4>A PHP Error was encountered</h4>
+                    <p>Severity: Notice</p>
+                    <p>Message: Undefined variable: sending_email</p>
+                    <p>Filename: perposals/modals.php</p>
+                    <p>Line Number: 428</p>
+                    <p>Backtrace:</p>
+                    <p style="margin-left: 10px">
+                      File:
+                      /home/rmsyvdmn/public_html/application/views/applications/perposals/modals.php<br />
+                      Line: 428<br />
+                      Function: _error_handler
+                    </p>
+                    <p style="margin-left: 10px">
+                      File:
+                      /home/rmsyvdmn/public_html/application/controllers/Applications.php<br />
+                      Line: 803<br />
+                      Function: view
+                    </p>
+                    <p style="margin-left: 10px">
+                      File: /home/rmsyvdmn/public_html/index.php<br />
+                      Line: 315<br />
+                      Function: require_once
+                    </p>
+                  </fieldset>
+                </div>
+                "&gt;
+              </div>
+              <div class="col-xl-9 col-lg-9 mb-1">
+                <fieldset class="form-group">
+                  <label for="subject">Subject:</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    class="form-control"
+                  />
+                </fieldset>
+              </div>
+              <div class="col-xl-9 col-lg-9 mb-1">
+                <fieldset class="form-group">
+                  <label for="body">Body:</label>
+                  <textarea
+                    name="body"
+                    id="body"
+                    class="form-control"
+                    rows="5"
+                  ></textarea>
+                </fieldset>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">Submit</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="footer footer-static footer-light mt-4 mb-1"
+      style="background-color: white"
+    >
+      <p
+        class="clearfix text-muted text-sm-center"
+        style="text-align: center !important"
+      >
+        All in One Research Management System for Universities, Hospitals,
+        Research Centers, and Funding Agencies
+      </p>
+    </footer>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <!-- BEGIN VENDOR JS-->
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/core/popper.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/core/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/perfect-scrollbar.jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/prism.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/jquery.matchHeight-min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/screenfull.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/pace/pace.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- BEGIN VENDOR JS-->
+
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/chartist.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- BEGIN APEX JS-->
+
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/app-sidebar.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/select2.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/notification-sidebar.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/customizer.js"
+      type="text/javascript"
+    ></script>
+    <!-- END APEX JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/dashboard1.js"
+      type="text/javascript"
+    ></script>
+    <!-- END PAGE LEVEL JS-->
+
+    <script type="text/javascript">
+      $(document).on("change", 'input[type="file"]', function (e) {
+        var fileName = e.target.files[0].name;
+        $(this)
+          .closest(".custom-file")
+          .find(".custom-file-label")
+          .text(fileName);
+      });
+
+      $(".change_language").click(function () {
+        var language = $(this).attr("data");
+
+        $.ajax({
+          url: "https://www.rmsystem.cloud/admin/change_language/" + language,
+          dataType: "json",
+          success: function (data) {
+            if (data == "true") {
+              location.reload(true);
+            }
+          },
+        });
+      });
+
+      if (document.querySelector("input[type=number]")) {
+        document
+          .querySelector("input[type=number]")
+          .addEventListener("keypress", function (evt) {
+            if (
+              (evt.which != 8 && evt.which != 0 && evt.which < 48) ||
+              evt.which > 57
+            ) {
+              evt.preventDefault();
+            }
+          });
+      }
+
+      function initmultiselect() {
+        $("select[multiple]").multiselect({
+          includeSelectAllOption: true,
+          enableFiltering: true,
+          enableCaseInsensitiveFiltering: true,
+        });
+      }
+
+      $(document).ready(function () {
+        initmultiselect();
+      });
+    </script>
+    <script type="text/javascript">
+      $(".custom-selct").select2();
+
+      var clicked = $(
+        ".add_more_investigator_fields input[name='invest_name[]']"
+      ).length;
+      $(".add_more_rows").click(function () {
+        if (clicked < 5) {
+          var file_html = $("#new_investigator").html();
+          $(".add_more_investigators").append(file_html);
+          clicked++;
+        }
+      });
+
+      $(document).on("click", ".file-remove", function () {
+        $(this).closest("tr").remove();
+      });
+      $(document).on("click", ".remove_attach", function () {
+        $(this).closest(".row").remove();
+      });
+
+      //checkallintable
+      $(".selectall").click(function () {
+        if ($(this).is(":checked")) {
+          $(".check-files").prop("checked", true);
+        } else {
+          $(".check-files").prop("checked", false);
+        }
+      });
+
+      var clicked = $(
+        ".add_more_files_fields input[name='file_label[]']"
+      ).length;
+      $(".add_more_files").click(function () {
+        if (clicked < 5) {
+          var file_html = $(".attach_files_html").html();
+          $(".add_more_files_fields").append(file_html);
+          clicked++;
+        }
+      });
+
+      // $('#AnimalsDataTable1').DataTable({
+      //         "paging": true,
+      //         "lengthChange": false,
+      //         "searching": true,
+      //         "ordering": true,
+      //         "info": true,
+      //         "autoWidth": false,
+      //         "responsive": true,
+      //     });
+
+      $("input[type=radio][name=is_human]").change(function () {
+        if (this.value == 1) {
+          $("#human_check").show();
+          $("#federal_yes").hide();
+          $("#federal_no").hide();
+          $("input[name='federal_accept']").attr("required", true);
+        } else {
+          $("#human_check").hide();
+          $("#federal_yes").hide();
+          $("#federal_no").hide();
+          $("input[name='federal_accept']").attr("required", false);
+          $("input[name='federal_accept']").prop("checked", false);
+          $("input[name='exemption_number']").prop("checked", false);
+          $("input[name='exemption_number']").prop("required", false);
+          $("input[name='irb_pending']").prop("checked", false);
+          $("input[name='irb_pending']").prop("required", false);
+          $("input[name='irb_approval_date']").val("");
+          $("input[name='irb_approval_date']").prop("required", false);
+          $("input[name='human_assur_num']").val("");
+          $("input[name='human_assur_num']").prop("required", false);
+        }
+      });
+
+      $("input[type=radio][name=federal_accept]").change(function () {
+        if (this.value == 1) {
+          $("#federal_yes").show();
+          $("#federal_no").hide();
+          $("input[name='exemption_number']").attr("required", true);
+        } else {
+          $("#federal_no").show();
+          $("#federal_yes").hide();
+          $("input[name='exemption_number']").attr("required", false);
+          $("input[name='exemption_number']").attr("checked", false);
+        }
+      });
+
+      $("input[type=radio][name=animal_used]").change(function () {
+        if (this.value == 1) {
+          $("#animal_used_yes").show();
+          $("input[name='iacuc_pending']").attr("required", true);
+          $("input[name='iacuc_approval_date']").attr("required", true);
+          $("input[name='animal_assur_num']").attr("required", true);
+        } else {
+          $("#animal_used_yes").hide();
+          $("input[name='iacuc_pending']").attr("required", false);
+          $("input[name='iacuc_approval_date']").attr("required", false);
+          $("input[name='animal_assur_num']").attr("required", false);
+          $("input[name='iacuc_pending']").attr("checked", false);
+          $("input[name='iacuc_approval_date']").val("");
+          $("input[name='animal_assur_num']").val("");
+        }
+      });
+    </script>
+  </body>
+</html>

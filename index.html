@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
+    />
+    <meta name="author" content="hani Elamir" />
+    <title>Submission Page</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Montserrat:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- BEGIN VENDOR CSS-->
+    <!-- font icons-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/fonts/feather/style.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/fonts/simple-line-icons/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/fonts/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/vendors/css/perfect-scrollbar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/vendors/css/prism.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/vendors/css/chartist.min.css"
+    />
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/css/app.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/css/custom.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/css/invoice.css"
+    />
+    <!-- END  CSS-->
+    <!-- END Custom CSS-->
+
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/core/jquery-3.2.1.min.js"
+      type="text/javascript"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.rmsystem.cloud/app-assets/datatable/datatables.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.rmsystem.cloud/app-assets/datatable/datatables.min.js"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="https://www.rmsystem.cloud/app-assets/images/logo.jpg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://www.rmsystem.cloud/js/standalone/selectize.js"></script>
+  </head>
+  <body data-col="2-columns" class="2-columns">
+    <div class="wrapper">
+      <div class="main-content">
+        <div class="main-panel">
+          <div class="main-content">
+            <div class="content-wrapper">
+              <!-- Basic Elements start -->
+              <section class="basic-elements">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header mb-2 text-center">
+                        <h4 class="card-title mb-0">IACUC PROTOCOL FORM</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="px-3">
+                          <form
+                            class="form"
+                            action=""
+                            method="post"
+                            enctype=""
+                            onsubmit=""
+                            style="padding: 10px"
+                          >
+                            <input
+                              type="hidden"
+                              name="announce_id"
+                              value="30"
+                            />
+                            <input
+                              type="hidden"
+                              name="submission_id"
+                              value="2022-28198"
+                            />
+                            <div class="row mt-3">
+                              <div class="col-md-12">
+                                <h4 class="card-title mb-1">
+                                  GENERAL INFORMATION
+                                </h4>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Principal Investigator:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="principal_invest"
+                                    readonly
+                                    value="admin"
+                                    placeholder="Principal Investigator:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >First Name: (English)</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="first_name_en"
+                                    value="admin"
+                                    readonly
+                                    placeholder="First Name: (English)"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Middle Name: (English)</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="middle_name_en"
+                                    value="admin"
+                                    readonly
+                                    placeholder="Middle Name: (English)"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Last Name: (English) *</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="last_name_en"
+                                    value="admin"
+                                    readonly
+                                    placeholder="Last Name: (English)"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >First Name: (Arabic)</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="first_name_ar"
+                                    value="admin"
+                                    readonly
+                                    placeholder="First Name: (Arabic)"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Middle Name: (Arabic)</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="middle_name_ar"
+                                    value="admin"
+                                    readonly
+                                    placeholder="Middle Name: (Arabic)"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Last Name: (Arabic) *</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="last_name_ar"
+                                    value="admin"
+                                    readonly
+                                    placeholder="Last Name: (Arabic)"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Position/Title :</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="position"
+                                    placeholder="Position/Title :"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Address street</label>
+                                  <input
+                                    type="text"
+                                    name="add_street"
+                                    placeholder="Address street"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Address City</label>
+                                  <input
+                                    type="text"
+                                    name="address_city"
+                                    placeholder="Address City"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Address country</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="address_country"
+                                    placeholder="Address country"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Zip /Postal Code</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="zip"
+                                    placeholder="Zip /Postal Code"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Status:</label>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="1"
+                                        class="custom-control-input"
+                                        id="Status1"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status1"
+                                        >Faculty</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="2"
+                                        class="custom-control-input"
+                                        id="Status2"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status2"
+                                        >Hospital Staff</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="3"
+                                        class="custom-control-input"
+                                        id="Status3"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status3"
+                                        >Post-Doctoral</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="4"
+                                        class="custom-control-input"
+                                        id="Status4"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status4"
+                                        >Resident/Fellow</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="5"
+                                        class="custom-control-input"
+                                        id="Status5"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status5"
+                                        >Graduate Student</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="6"
+                                        class="custom-control-input"
+                                        id="Status6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status6"
+                                        >Undergraduate Student</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="7"
+                                        class="custom-control-input"
+                                        id="Status7"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status"
+                                        >Researcher</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="8"
+                                        class="custom-control-input"
+                                        id="Status8"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status8"
+                                        >Technician</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Status"
+                                        value="3"
+                                        class="custom-control-input"
+                                        id="Status9"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Status9"
+                                        >Other</label
+                                      >
+                                      <input
+                                        type="text"
+                                        name="other_Status"
+                                        required=""
+                                        class="form-control col-xl-6"
+                                      />
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">ID number:</label>
+                                  <input
+                                    type="text"
+                                    name="id_num"
+                                    value="admin"
+                                    readonly
+                                    placeholder="ID number:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Phone:</label>
+                                  <input
+                                    type="tel"
+                                    name="phone"
+                                    value="admin"
+                                    readonly
+                                    placeholder="Phone:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Fax</label>
+                                  <input
+                                    type="tel"
+                                    name="fax"
+                                    value="admin"
+                                    readonly
+                                    placeholder="Fax"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Phone office :</label>
+                                  <input
+                                    type="tel"
+                                    name="phone_office"
+                                    value="admin"
+                                    readonly
+                                    placeholder="Phone office :"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Emergency no. for after hours:</label
+                                  >
+                                  <input
+                                    type="tel"
+                                    name="emergency_no"
+                                    value="admin"
+                                    readonly
+                                    placeholder="Emergency no. for after hours:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Online Training ID</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="online_training_id"
+                                    placeholder="Online Training ID"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-xl-12 mb-1">
+                                <fieldset
+                                  class="form-group d-flex align-items-center"
+                                >
+                                  <label for="basicInput" class="mb-0"
+                                    >Is this research being funded?<br />
+                                    If yes, please specify</label
+                                  >
+                                  <label
+                                    class="switch mb-0 mx-1"
+                                    style="flex-shrink: 0"
+                                    ><input
+                                      type="checkbox"
+                                      name="if_funded"
+                                      value="1" /><span
+                                      class="slider round"
+                                    ></span
+                                  ></label>
+                                  <span>YES/NO</span>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-2">
+                              <div class="col-lg-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Funding Sources:</label
+                                  >
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="fund_src"
+                                        value="1"
+                                        class="custom-control-input"
+                                        id="fund_src1"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="fund_src1"
+                                        >Governmental funding</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="fund_src"
+                                        value="2"
+                                        class="custom-control-input"
+                                        id="fund_src2"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="fund_src2"
+                                        >Internal funding</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="fund_src"
+                                        value="3"
+                                        class="custom-control-input"
+                                        id="fund_src3"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="fund_src3"
+                                        >Private sector funding</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="fund_src"
+                                        value="4"
+                                        class="custom-control-input"
+                                        id="fund_src4"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="fund_src4"
+                                        >International governmental funding □
+                                        International private sector
+                                        funding</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="fund_src"
+                                        value="5"
+                                        class="custom-control-input"
+                                        id="fund_src5"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="fund_src5"
+                                        >Undergraduate / postgraduate student
+                                        funding</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="fund_src"
+                                        value="6"
+                                        class="custom-control-input"
+                                        id="fund_src6"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="fund_src6"
+                                        >Not funded</label
+                                      >
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="col-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Name of the funding agency:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="fund_agency_name"
+                                    placeholder="Name of the funding agency:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput" style="display: block"
+                                    >Total budget of the grants:</label
+                                  >
+                                  <input
+                                    type="number"
+                                    name="budget"
+                                    placeholder="budget"
+                                    class="form-control"
+                                    style="display: inline-block; width: 50%"
+                                  />
+                                  <input
+                                    type="text"
+                                    name="currency"
+                                    placeholder="$$$"
+                                    class="form-control"
+                                    style="
+                                      display: inline-block;
+                                      width: 20%;
+                                      text-align: center;
+                                    "
+                                  />
+                                  <input
+                                    type="text"
+                                    name="currency"
+                                    placeholder="currency"
+                                    class="form-control"
+                                    style="
+                                      display: inline-block;
+                                      width: 20%;
+                                      text-align: center;
+                                    "
+                                  />
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Study expected start date
+                                    (Day/Month/Year)</label
+                                  >
+                                  <input
+                                    type="date"
+                                    name="start_date"
+                                    placeholder="Study expected start date (Day/Month/Year)"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Study expected end date
+                                    (Day/Month/Year)</label
+                                  >
+                                  <input
+                                    type="date"
+                                    name="end_date"
+                                    placeholder="Study expected end date (Day/Month/Year)"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-12">
+                                <h4 class="card-title mb-1">
+                                  Co Investigators Names
+                                </h4>
+                                <p>
+                                  [List the names of all authorized individuals
+                                  under this Project and identify key personnel
+                                  [e.g., co-investigator(s)], providing their
+                                  names, Department/College, ID, e-mail, and
+                                  Role]
+                                </p>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Name:</label>
+                                  <input
+                                    type="text"
+                                    name="co_investigators_name"
+                                    placeholder="Name:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Univ/ Institution:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="co_investigators_univ"
+                                    placeholder="Univ/ Institution:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">College:</label>
+                                  <input
+                                    type="text"
+                                    name="co_investigators_college"
+                                    placeholder="College:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Department:</label>
+                                  <input
+                                    type="text"
+                                    name="co_investigators_department"
+                                    placeholder="Department:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">ID:</label>
+                                  <input
+                                    type="text"
+                                    name="co_investigators_ID"
+                                    placeholder="ID:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Role in project:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="co_investigators_role"
+                                    placeholder="Role in project:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Employee or student ID:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="co_investigators_student_ID"
+                                    placeholder="Employee or student ID:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <button
+                                  type="button"
+                                  name="co_investigators_add"
+                                  class="btn btn-outline-primary btn-sm mt-1 add_more"
+                                >
+                                  + Click To Add More
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-12">
+                                <h4 class="card-title mb-3">
+                                  Collaborating institutions/facilities
+                                </h4>
+                              </div>
+                              <div class="col-xl-8 col-lg-12 mb-1 mt-1">
+                                <fieldset
+                                  class="form-group d-flex align-items-center"
+                                >
+                                  <label for="basicInput" class="mb-0"
+                                    >Will the research be conducted only at your
+                                    institute with no involvement of a
+                                    collaborating institution?</label
+                                  >
+                                  <label
+                                    class="switch mb-0 mx-1"
+                                    style="flex-shrink: 0"
+                                    ><input
+                                      type="checkbox"
+                                      name="if_multi_institutional"
+                                      value="1" /><span
+                                      class="slider round"
+                                    ></span
+                                  ></label>
+                                  <span>YES/NO</span>
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">If Yes Explain</label>
+                                  <input
+                                    type="text"
+                                    name="yes_explain"
+                                    placeholder="If Yes Explain"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Institute Name:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="institute_name"
+                                    placeholder="Institute Name:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Describe Involvement</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="describe_involvement"
+                                    placeholder="Describe Involvement"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >REC Approval/Site Permission
+                                    Attached?</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="site_permission_attached"
+                                    placeholder="REC Approval/Site Permission Attached?"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <button
+                                  type="button"
+                                  name="institute_add"
+                                  class="btn btn-outline-primary btn-sm mt-1 add_more"
+                                >
+                                  + Click To Add More
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-lg-8 mb-1 mt-1">
+                                <fieldset
+                                  class="form-group d-flex align-items-center"
+                                >
+                                  <label for="basicInput" class="mb-0"
+                                    >Will any aspect of the study take place
+                                    outside the Country?</label
+                                  >
+                                  <label
+                                    class="switch mb-0 mx-1"
+                                    style="flex-shrink: 0"
+                                    ><input
+                                      type="checkbox"
+                                      name="if_outside"
+                                      value="1" /><span
+                                      class="slider round"
+                                    ></span
+                                  ></label>
+                                  <span>YES/NO</span>
+                                </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                <h4 class="card-title mb-3">
+                                  International Research:
+                                </h4>
+                              </div>
+                              <div class="col-lg-12 mt-1">
+                                <fieldset
+                                  class="form-group d-flex align-items-center"
+                                >
+                                  <label for="basicInput" class="mb-0"
+                                    >If Yes please add the data below</label
+                                  >
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Country</label>
+                                  <input
+                                    type="text"
+                                    name="outside_Country"
+                                    placeholder="Country"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Address</label>
+                                  <input
+                                    type="text"
+                                    name="outside_address"
+                                    placeholder="Address"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Name of Collaborating
+                                    Institution/Facility</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="facility_name"
+                                    placeholder="Name of Collaborating Institution/Facility"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Describe Involvement</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="describe_involvement"
+                                    placeholder="Describe Involvement"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    ># IACUC/Ethics Approval and/or Site
+                                    Permission add Attachment</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="permission"
+                                    placeholder="# IACUC/Ethics Approval and/or Site Permission add Attachment"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <button
+                                  type="button"
+                                  name="outside_add"
+                                  class="btn btn-outline-primary btn-sm mt-1 add_more"
+                                >
+                                  + Click To Add More
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-lg-8 mb-1 mt-1">
+                                <fieldset
+                                  class="form-group d-flex align-items-center"
+                                >
+                                  <label for="basicInput" class="mb-0"
+                                    >Is this research a course
+                                    requirement?</label
+                                  >
+                                  <label
+                                    class="switch mb-0 mx-1"
+                                    style="flex-shrink: 0"
+                                    ><input
+                                      type="checkbox"
+                                      name="if_requirement"
+                                      value="1" /><span
+                                      class="slider round"
+                                    ></span
+                                  ></label>
+                                  <span>YES/NO</span>
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mt-1">
+                                <fieldset
+                                  class="form-group d-flex align-items-center"
+                                >
+                                  <label for="basicInput" class="mb-0"
+                                    >If Yes please add the data below</label
+                                  >
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Course?</label>
+                                  <input
+                                    type="text"
+                                    name="req_Course"
+                                    placeholder="Course?"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Program?</label>
+                                  <input
+                                    type="text"
+                                    name="req_Program"
+                                    placeholder="Program?"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Semester?</label>
+                                  <input
+                                    type="text"
+                                    name="req_Semester"
+                                    placeholder="Semester?"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mt-1">
+                                <fieldset
+                                  class="form-group d-flex align-items-center"
+                                >
+                                  <label for="basicInput" class="mb-0"
+                                    >Course Instructor﻿</label
+                                  >
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">First Name</label>
+                                  <input
+                                    type="text"
+                                    name="first_name"
+                                    placeholder="First Name"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Last Name</label>
+                                  <input
+                                    type="text"
+                                    name="last_name"
+                                    placeholder="Last Name"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Institution</label>
+                                  <input
+                                    type="text"
+                                    name="institution"
+                                    placeholder="Institution"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Institution Address</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="institution_address"
+                                    placeholder="Institution Address"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Title Email</label>
+                                  <input
+                                    type="mail"
+                                    name="title_mail"
+                                    placeholder="Title Email"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Phone</label>
+                                  <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Phone"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <button
+                                  type="button"
+                                  name="outside_add"
+                                  class="btn btn-outline-primary btn-sm mt-1 add_more"
+                                >
+                                  + Click To Add More
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >What is the main objective of the research
+                                    in this course?</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="main_objective"
+                                    placeholder="What is the main objective of the research in this course?"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >All students participating in research are
+                                    REQUIRED to complete the GCP
+                                    certification</label
+                                  >
+                                  <div class="custom-control">
+                                    <input
+                                      type="radio"
+                                      name="gcp"
+                                      value="1"
+                                      class="custom-control-input"
+                                      id="gcp1"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="gcp1"
+                                      >Yes, I will ensure all students complete
+                                      the GCP certification prior to the
+                                      beginning of any research
+                                      activities.</label
+                                    >
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-xl-12 mb-1">
+                                <fieldset
+                                  class="form-group d-flex align-items-center"
+                                >
+                                  <label for="basicInput" class="mb-0"
+                                    >Is this an breeding only protocol?
+                                  </label>
+                                  <label
+                                    class="switch mb-0 mx-1"
+                                    style="flex-shrink: 0"
+                                    ><input
+                                      type="checkbox"
+                                      name="protocol"
+                                      value="1" /><span
+                                      class="slider round"
+                                    ></span
+                                  ></label>
+                                  <span>YES/NO</span>
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >If Yes please add the data below</label
+                                  >
+                                </fieldset>
+                              </div>
+                              <div class="col-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Please provide a brief description that
+                                    describes the purpose for the animals
+                                    produced on this protocol.
+                                  </label>
+                                  <textarea
+                                    name="animals_protocol"
+                                    required=""
+                                    placeholder=""
+                                    class="form-control"
+                                    rows="8"
+                                    cols="80"
+                                  ></textarea>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Protocol / Study / Project Title
+                                    English:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="title_en"
+                                    placeholder="Protocol / Study / Project Title English:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Protocol / Project Title Arabic:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="title_ar"
+                                    placeholder="Protocol / Project Title Arabic:"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-12">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >IACUC Protocol Abstract
+                                  </label>
+                                </fieldset>
+                              </div>
+                              <div class="col-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Provide the proposed project abstract
+                                    including the following subheadings:
+                                    Background, objectives, and methods (not
+                                    more than 500 words).</label
+                                  >
+                                  <textarea
+                                    name="proposed_project"
+                                    required=""
+                                    placeholder=""
+                                    class="form-control"
+                                    rows="8"
+                                    cols="80"
+                                  ></textarea>
+                                </fieldset>
+                              </div>
+                              <div class="col-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Abstract Arabic: *
+                                  </label>
+                                  <textarea
+                                    name="Abstract_ar"
+                                    required=""
+                                    placeholder=""
+                                    class="form-control"
+                                    rows="8"
+                                    cols="80"
+                                  ></textarea>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-12">
+                                <h4 class="card-title mb-3">
+                                  DESCRIPTION OF EXPERIMENTAL DESIGN AND ANIMAL
+                                  PROCEDURES
+                                </h4>
+                              </div>
+                              <div class="col-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Briefly explain the experimental design and
+                                    specify all animal procedures. All
+                                    procedures to be employed in the study must
+                                    be described.</label
+                                  >
+                                  <textarea
+                                    name="explain_experimental"
+                                    required=""
+                                    placeholder=""
+                                    class="form-control"
+                                    rows="8"
+                                    cols="80"
+                                  ></textarea>
+                                </fieldset>
+                              </div>
+                              <div class="col-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Describe briefly how this study will
+                                    contribute to existing knowledge in the
+                                    field.</label
+                                  >
+                                  <textarea
+                                    name="describe"
+                                    required=""
+                                    placeholder=""
+                                    class="form-control"
+                                    rows="8"
+                                    cols="80"
+                                  ></textarea>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-12">
+                                <h4 class="card-title mb-3">
+                                  ANIMAL REQUIREMENTS
+                                </h4>
+                              </div>
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Genus: [e.g., Mus]</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="genus"
+                                    placeholder="Genus: [e.g., Mus]"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Species: [e.g., musculus]</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="Species"
+                                    placeholder="Species:  [e.g., musculus]"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Strain, subspecies, or breed: [e.g.,
+                                    C57BL/6]</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="Strain_subspecies_breed"
+                                    placeholder="Strain, subspecies, or breed: [e.g., C57BL/6]"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Common name: [e.g., Black6]</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="Common_name"
+                                    placeholder="Common name: [e.g., Black6]"
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Approximate age, weight or size:
+                                  </label>
+                                  <input
+                                    type="text"
+                                    name="Approximate"
+                                    placeholder="Approximate age, weight or size: "
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Sex</label>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Sex"
+                                        value="1"
+                                        class="custom-control-input"
+                                        id="Sex1"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Sex1"
+                                        >Female</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="Sex"
+                                        value="2"
+                                        class="custom-control-input"
+                                        id="Sex2"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="Sex2"
+                                        >Male</label
+                                      >
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Genetic Status:</label
+                                  >
+
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="genetic_status"
+                                        value="1"
+                                        class="custom-control-input"
+                                        id="genetic_status1"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="genetic_status1"
+                                        >Transgenic</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="genetic_status"
+                                        value="2"
+                                        class="custom-control-input"
+                                        id="genetic_status2"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="genetic_status2"
+                                        >Knockout</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="genetic_status"
+                                        value="3"
+                                        class="custom-control-input"
+                                        id="genetic_status3"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="genetic_status3"
+                                        >Spontaneous mutation</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                    <div class="custom-control">
+                                      <input
+                                        type="radio"
+                                        name="genetic_status"
+                                        value="4"
+                                        class="custom-control-input"
+                                        id="genetic_status4"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="genetic_status4"
+                                        >None</label
+                                      >
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >If yes, please provide genotypic details:
+                                    transgenic, knockout, mutant, and
+                                    immunocompromised.</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="provide_details"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Source(s): [e.g., name of vendor or
+                                    breeder, or bred in-house]</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="Source"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Primary housing location(s):<br />
+                                    [Facility must have a resource capacity to
+                                    support the studies. If animals will be
+                                    housed in the lab or outside the facility
+                                    for more than 12 hours, provide building and
+                                    room number.]
+                                  </label>
+                                  <input
+                                    type="text"
+                                    name="housing_location"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Location(s) where manipulation will be
+                                    conducted: <br />
+
+                                    [building, lab, and room number.]
+                                  </label>
+                                  <input
+                                    type="text"
+                                    name="Location_manipulation"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Number of animals to be used:
+                                  </label>
+                                  <input
+                                    type="text"
+                                    name="Number_animals"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput"
+                                    >Total number of animals to be used:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="total_Number_animals"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Year 1: </label>
+                                  <input
+                                    type="text"
+                                    name="year1"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Year 2: </label>
+                                  <input
+                                    type="text"
+                                    name="year2"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-xl-4 col-lg-6 mb-1">
+                                <fieldset class="form-group">
+                                  <label for="basicInput">Year 3:</label>
+                                  <input
+                                    type="text"
+                                    name="year3"
+                                    placeholder=""
+                                    class="form-control"
+                                  />
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-lg-1 col-md-1">
+                                <button
+                                  type="button"
+                                  name="button"
+                                  class="btn btn-outline-primary btn-sm mt-1 add_more_files"
+                                >
+                                  Click To Add Attachments
+                                </button>
+                              </div>
+                              <div
+                                class="col-xl-12 col-lg-12 add_more_files_fields"
+                              >
+                                <div class="row">
+                                  <div class="col-xl-5 col-lg-5 mb-2">
+                                    <fieldset class="form-group">
+                                      <label for="basicInput">File Name</label>
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        required=""
+                                        name="file_label[]"
+                                      />
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-xl-5 col-lg-5 mb-2">
+                                    <label for="file">Upload File</label>
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <span
+                                          class="input-group-text"
+                                          id="inputGroupFileAddon01"
+                                          >Upload</span
+                                        >
+                                      </div>
+                                      <div class="custom-file">
+                                        <input
+                                          type="file"
+                                          class="custom-file-input"
+                                          required=""
+                                          aria-describedby="inputGroupFileAddon01"
+                                          name="attachments[]"
+                                        />
+                                        required
+                                        <label
+                                          class="custom-file-label"
+                                          for="inputGroupFile01"
+                                          >Choose File</label
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-xl-1 col-lg-1 text-danger"
+                                  ></div>
+                                </div>
+                              </div>
+
+                              ////////////// table here //////////////
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-12">
+                                <p>
+                                  Your protocol may not be approved without
+                                  acknowledging the following statements The
+                                  following requirements must be met prior to
+                                  the involvement of any individual in
+                                  laboratory animal use: - I certify that I have
+                                  attended the institutionally required
+                                  investigator training course. - I certify that
+                                  I have determined that the research proposed
+                                  herein is not unnecessarily duplicative of
+                                  previously reported research. - All
+                                  individuals handling the animals must be
+                                  experienced with the species and are fully
+                                  trained in the procedures they are required to
+                                  perform. - All individuals handling the
+                                  animals are vaccinated - Institutional animal
+                                  care and use committee (IACUC) may request
+                                  additional proof of training for
+                                  species-handling or specific procedures.
+                                </p>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                <div class="custom-control">
+                                  <input
+                                    type="radio"
+                                    name="terms1"
+                                    value="1"
+                                    class="custom-control-input"
+                                    id="terms1"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="terms1"
+                                  >
+                                    PI has read the above statement on conflicts
+                                    of interest. He/she has nothing to declare
+                                    now, and He/she will immediately declare in
+                                    writing to the IACUC of any future conflicts
+                                    of interest.
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                <div class="custom-control">
+                                  <input
+                                    type="radio"
+                                    name="terms2"
+                                    value="2"
+                                    class="custom-control-input"
+                                    id="terms2"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="terms2"
+                                  >
+                                    By checking this item, I understand it is
+                                    the PI’s responsibility to ensure all
+                                    investigators have met the above
+                                    requirements.
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                <div class="custom-control">
+                                  <input
+                                    type="radio"
+                                    name="terms3"
+                                    value="3"
+                                    class="custom-control-input"
+                                    id="terms3"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="terms3"
+                                  >
+                                    Click here to confirm that PI has read and
+                                    understood IACUC Policies and Procedures
+                                    issued by the institute IACUC Terms and
+                                    Policies (hyperlink) ……………………………………
+                                  </label>
+                                </div>
+                              </div>
+
+                              <div class="col-xl-12 col-lg-12 mb-1 mt-1">
+                                <div class="form-actions" style="border: 0">
+                                  <button
+                                    type="submit"
+                                    name="action"
+                                    value="new"
+                                    class="btn btn-raised btn-success"
+                                  >
+                                    Submit
+                                  </button>
+                                  <button
+                                    type="submit"
+                                    name="action"
+                                    value="draft"
+                                    class="btn btn-raised btn-primary"
+                                  >
+                                    Save Draft
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <!-- BEGIN VENDOR JS-->
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/core/popper.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/core/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/perfect-scrollbar.jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/prism.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/jquery.matchHeight-min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/screenfull.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/pace/pace.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- BEGIN VENDOR JS-->
+
+    <script
+      src="https://www.rmsystem.cloud/app-assets/vendors/js/chartist.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- BEGIN APEX JS-->
+
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/app-sidebar.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/select2.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/notification-sidebar.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/customizer.js"
+      type="text/javascript"
+    ></script>
+    <!-- END APEX JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+
+    <script
+      src="https://www.rmsystem.cloud/app-assets/js/dashboard1.js"
+      type="text/javascript"
+    ></script>
+    <!-- END PAGE LEVEL JS-->
+
+    <script type="text/javascript">
+      $(".custom-selct").select2();
+    </script>
+  </body>
+</html>
